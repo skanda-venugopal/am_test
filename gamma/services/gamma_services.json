@@ -1,0 +1,111 @@
+{
+  "metadata": {
+    "export_type": "services",
+    "realm": "gamma",
+    "timestamp": "2026-03-02T09:21:20Z",
+    "version": null,
+    "total_items": 5,
+    "storage_mode": "git",
+    "component": "services"
+  },
+  "data": {
+    "result": [
+      {
+        "_id": "",
+        "deviceIdSettingsEncryptionKeystoreType": "JKS",
+        "deviceIdSettingsEncryptionKeystore": "C:/Users/ASUS/am/security/keystores/keystore.jks",
+        "deviceIdSettingsEncryptionScheme": "NONE",
+        "deviceIdAttrName": "devicePrintProfiles",
+        "deviceIdSettingsEncryptionKeystorePassword": null,
+        "_type": {
+          "_id": "deviceIdService",
+          "name": "Device ID Service",
+          "collection": false
+        },
+        "nextDescendents": []
+      },
+      {
+        "_id": "",
+        "auditEnabled": true,
+        "whitelistFieldFilters": [
+          "userId,username,clientId,ipAddress,action,resource,realm,timestamp,outcome"
+        ],
+        "blacklistFieldFilters": [
+          "password,secret,token,refreshToken,accessToken,authorization,sessionId"
+        ],
+        "_type": {
+          "_id": "audit",
+          "name": "Audit Logging",
+          "collection": false
+        },
+        "nextDescendents": []
+      },
+      {
+        "_id": "",
+        "emailAddressAttribute": "mail",
+        "transportType": "[Empty]",
+        "emailRateLimitSeconds": 1,
+        "port": 465,
+        "emailImplClassName": "org.forgerock.openam.services.email.MailServerImpl",
+        "message": "hello test",
+        "subject": "xxx",
+        "sslState": "SSL",
+        "from": "xxx@gmail.com",
+        "_type": {
+          "_id": "email",
+          "name": "Email Service",
+          "collection": false
+        },
+        "nextDescendents": []
+      },
+      {
+        "_id": "",
+        "assignedDashboard": [
+          "xxx",
+          "xyz"
+        ],
+        "_type": {
+          "_id": "dashboard",
+          "name": "Dashboard",
+          "collection": false
+        },
+        "nextDescendents": []
+      },
+      {
+        "_id": "",
+        "userAliasEnabled": false,
+        "connectionPoolMinimumSize": 1,
+        "maximumSearchResults": 100,
+        "policyHeartbeatTimeUnit": "SECONDS",
+        "usersSearchAttribute": "uid",
+        "searchTimeout": 5,
+        "policyHeartbeatInterval": 10,
+        "usersSearchScope": "SCOPE_SUB",
+        "subjectsResultTTL": 10,
+        "checkIfResourceTypeExists": true,
+        "connectionPoolMaximumSize": 10,
+        "sslEnabled": true,
+        "bindDn": "cn=Directory Manager",
+        "ldapServer": [
+          "localhost:50636"
+        ],
+        "mtlsEnabled": false,
+        "bindPassword": null,
+        "realmSearchFilter": "(objectclass=sunismanagedorganization)",
+        "usersSearchFilter": "(objectclass=inetorgperson)",
+        "usersBaseDn": "dc=openam,dc=forgerock,dc=org",
+        "_type": {
+          "_id": "policyconfiguration",
+          "name": "Policy Configuration",
+          "collection": false
+        },
+        "nextDescendents": []
+      }
+    ],
+    "resultCount": 5,
+    "pagedResultsCookie": null,
+    "totalPagedResultsPolicy": "EXACT",
+    "totalPagedResults": 5,
+    "remainingPagedResults": -1
+  }
+}
