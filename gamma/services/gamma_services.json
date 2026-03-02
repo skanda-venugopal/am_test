@@ -52,7 +52,7 @@
         "sslState": "SSL",
         "from": "xxx@gmail.com",
         "_type": {
-          "_id": "email",
+          "_id": "email_break",
           "name": "Email Service",
           "collection": false
         },
@@ -110,4 +110,5 @@
   }
 
 }
+
 
