@@ -1,0 +1,21 @@
+{
+  "result": [
+    {
+      "_id": "audit",
+      "name": "Audit Logging"
+    },
+    {
+      "_id": "policyconfiguration",
+      "name": "Policy Configuration"
+    },
+    {
+      "_id": "baseurl",
+      "name": "Base URL Source"
+    }
+  ],
+  "resultCount": 3,
+  "pagedResultsCookie": null,
+  "totalPagedResultsPolicy": "EXACT",
+  "totalPagedResults": 3,
+  "remainingPagedResults": -1
+}
