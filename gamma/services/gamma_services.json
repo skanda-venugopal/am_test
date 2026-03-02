@@ -79,7 +79,7 @@
         "usersSearchFilter": "(objectclass=inetorgperson)",
         "usersBaseDn": "dc=openam,dc=forgerock,dc=org",
         "_type": {
-          "_id": "policyconfiguration_break",
+          "_id": "policyconfiguration",
           "name": "Policy Configuration",
           "collection": false
         },
@@ -94,3 +94,4 @@
   }
 
 }
+
