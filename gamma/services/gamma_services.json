@@ -2,14 +2,46 @@
   "metadata": {
     "export_type": "services",
     "realm": "gamma",
-    "timestamp": "2026-03-02T10:25:17Z",
+    "timestamp": "2026-03-02T11:53:26Z",
     "version": null,
-    "total_items": 2,
+    "total_items": 4,
     "storage_mode": "git",
     "component": "services"
   },
   "data": {
     "result": [
+      {
+        "_id": "",
+        "auditEnabled": true,
+        "whitelistFieldFilters": [
+          "xyz"
+        ],
+        "blacklistFieldFilters": [
+          "lmno"
+        ],
+        "_type": {
+          "_id": "audit",
+          "name": "Audit Logging",
+          "collection": false
+        },
+        "nextDescendents": []
+      },
+      {
+        "_id": "",
+        "emailAddressAttribute": "mail",
+        "transportType": "[Empty]",
+        "emailRateLimitSeconds": 1,
+        "port": 465,
+        "emailImplClassName": "org.forgerock.openam.services.email.MailServerImpl",
+        "sslState": "SSL",
+        "from": "xxx@gmail.com",
+        "_type": {
+          "_id": "email",
+          "name": "Email Service",
+          "collection": false
+        },
+        "nextDescendents": []
+      },
       {
         "_id": "",
         "assignedDashboard": [
@@ -53,10 +85,10 @@
         "nextDescendents": []
       }
     ],
-    "resultCount": 2,
+    "resultCount": 4,
     "pagedResultsCookie": null,
     "totalPagedResultsPolicy": "EXACT",
-    "totalPagedResults": 2,
+    "totalPagedResults": 4,
     "remainingPagedResults": -1
   }
 }
