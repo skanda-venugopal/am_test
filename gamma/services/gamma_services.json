@@ -1,0 +1,29 @@
+{
+  "result": [
+    {
+      "_id": "baseurl",
+      "name": "Base URL Source"
+    },
+    {
+      "_id": "audit",
+      "name": "Audit Logging"
+    },
+    {
+      "_id": "email",
+      "name": "Email Service"
+    },
+    {
+      "_id": "dashboard",
+      "name": "Dashboard"
+    },
+    {
+      "_id": "policyconfiguration",
+      "name": "Policy Configuration"
+    }
+  ],
+  "resultCount": 5,
+  "pagedResultsCookie": null,
+  "totalPagedResultsPolicy": "EXACT",
+  "totalPagedResults": 5,
+  "remainingPagedResults": -1
+}
