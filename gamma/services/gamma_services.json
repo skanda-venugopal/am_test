@@ -2,7 +2,7 @@
   "metadata": {
     "export_type": "services",
     "realm": "gamma",
-    "timestamp": "2026-03-02T09:21:20Z",
+    "timestamp": "2026-03-02T09:44:51Z",
     "version": null,
     "total_items": 5,
     "storage_mode": "git",
@@ -12,14 +12,13 @@
     "result": [
       {
         "_id": "",
-        "deviceIdSettingsEncryptionKeystoreType": "JKS",
-        "deviceIdSettingsEncryptionKeystore": "C:/Users/ASUS/am/security/keystores/keystore.jks",
-        "deviceIdSettingsEncryptionScheme": "NONE",
-        "deviceIdAttrName": "devicePrintProfiles",
-        "deviceIdSettingsEncryptionKeystorePassword": null,
+        "source": "REQUEST_VALUES",
+        "extensionClassName": "ty",
+        "fixedValue": "xx",
+        "contextPath": "/am",
         "_type": {
-          "_id": "deviceIdService",
-          "name": "Device ID Service",
+          "_id": "baseurl",
+          "name": "Base URL Source",
           "collection": false
         },
         "nextDescendents": []
@@ -28,10 +27,10 @@
         "_id": "",
         "auditEnabled": true,
         "whitelistFieldFilters": [
-          "userId,username,clientId,ipAddress,action,resource,realm,timestamp,outcome"
+          "abc\\"
         ],
         "blacklistFieldFilters": [
-          "password,secret,token,refreshToken,accessToken,authorization,sessionId"
+          "abc"
         ],
         "_type": {
           "_id": "audit",
@@ -52,7 +51,7 @@
         "sslState": "SSL",
         "from": "xxx@gmail.com",
         "_type": {
-          "_id": "email_break",
+          "_id": "email",
           "name": "Email Service",
           "collection": false
         },
@@ -108,7 +107,4 @@
     "totalPagedResults": 5,
     "remainingPagedResults": -1
   }
-
 }
-
-
