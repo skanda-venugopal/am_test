@@ -2,74 +2,14 @@
   "metadata": {
     "export_type": "services",
     "realm": "gamma",
-    "timestamp": "2026-03-02T09:44:51Z",
+    "timestamp": "2026-03-02T10:05:10Z",
     "version": null,
-    "total_items": 5,
+    "total_items": 1,
     "storage_mode": "git",
     "component": "services"
   },
   "data": {
     "result": [
-      {
-        "_id": "",
-        "source": "REQUEST_VALUES",
-        "extensionClassName": "ty",
-        "fixedValue": "xx",
-        "contextPath": "/am",
-        "_type": {
-          "_id": "baseurl",
-          "name": "Base URL Source",
-          "collection": false
-        },
-        "nextDescendents": []
-      },
-      {
-        "_id": "",
-        "auditEnabled": true,
-        "whitelistFieldFilters": [
-          "abc\\"
-        ],
-        "blacklistFieldFilters": [
-          "abc"
-        ],
-        "_type": {
-          "_id": "audit",
-          "name": "Audit Logging",
-          "collection": false
-        },
-        "nextDescendents": []
-      },
-      {
-        "_id": "",
-        "emailAddressAttribute": "mail",
-        "transportType": "[Empty]",
-        "emailRateLimitSeconds": 1,
-        "port": 465,
-        "emailImplClassName": "org.forgerock.openam.services.email.MailServerImpl",
-        "message": "hello test",
-        "subject": "xxx",
-        "sslState": "SSL",
-        "from": "xxx@gmail.com",
-        "_type": {
-          "_id": "email",
-          "name": "Email Service",
-          "collection": false
-        },
-        "nextDescendents": []
-      },
-      {
-        "_id": "",
-        "assignedDashboard": [
-          "xxx",
-          "xyz"
-        ],
-        "_type": {
-          "_id": "dashboard",
-          "name": "Dashboard",
-          "collection": false
-        },
-        "nextDescendents": []
-      },
       {
         "_id": "",
         "userAliasEnabled": false,
@@ -94,18 +34,17 @@
         "usersSearchFilter": "(objectclass=inetorgperson)",
         "usersBaseDn": "dc=openam,dc=forgerock,dc=org",
         "_type": {
-          "_id": "policyconfiguration_break",
+          "_id": "policyconfiguration",
           "name": "Policy Configuration",
           "collection": false
         },
         "nextDescendents": []
       }
     ],
-    "resultCount": 5,
+    "resultCount": 1,
     "pagedResultsCookie": null,
     "totalPagedResultsPolicy": "EXACT",
-    "totalPagedResults": 5,
+    "totalPagedResults": 1,
     "remainingPagedResults": -1
   }
-
 }
