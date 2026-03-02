@@ -42,7 +42,7 @@
       },
       {
         "_id": "",
-        "emailAddressAttribute": "mail",
+        "emailAddressAttribute": "email",
         "transportType": "[Empty]",
         "emailRateLimitSeconds": 1,
         "port": 465,
@@ -108,4 +108,5 @@
     "totalPagedResults": 5,
     "remainingPagedResults": -1
   }
+
 }
