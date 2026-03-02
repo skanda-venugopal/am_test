@@ -1,0 +1,13 @@
+{
+  "result": [
+    {
+      "_id": "policyconfiguration",
+      "name": "Policy Configuration"
+    }
+  ],
+  "resultCount": 1,
+  "pagedResultsCookie": null,
+  "totalPagedResultsPolicy": "EXACT",
+  "totalPagedResults": 1,
+  "remainingPagedResults": -1
+}
