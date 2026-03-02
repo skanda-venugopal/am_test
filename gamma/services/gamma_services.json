@@ -1,0 +1,21 @@
+{
+  "result": [
+    {
+      "_id": "email",
+      "name": "Email Service"
+    },
+    {
+      "_id": "dashboard",
+      "name": "Dashboard"
+    },
+    {
+      "_id": "policyconfiguration",
+      "name": "Policy Configuration"
+    }
+  ],
+  "resultCount": 3,
+  "pagedResultsCookie": null,
+  "totalPagedResultsPolicy": "EXACT",
+  "totalPagedResults": 3,
+  "remainingPagedResults": -1
+}
