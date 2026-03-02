@@ -2,9 +2,9 @@
   "metadata": {
     "export_type": "services",
     "realm": "gamma",
-    "timestamp": "2026-03-02T10:22:38Z",
+    "timestamp": "2026-03-02T10:25:17Z",
     "version": null,
-    "total_items": 3,
+    "total_items": 2,
     "storage_mode": "git",
     "component": "services"
   },
@@ -12,16 +12,12 @@
     "result": [
       {
         "_id": "",
-        "auditEnabled": true,
-        "whitelistFieldFilters": [
-          "abc"
-        ],
-        "blacklistFieldFilters": [
+        "assignedDashboard": [
           "abcd"
         ],
         "_type": {
-          "_id": "audit",
-          "name": "Audit Logging",
+          "_id": "dashboard",
+          "name": "Dashboard",
           "collection": false
         },
         "nextDescendents": []
@@ -55,25 +51,12 @@
           "collection": false
         },
         "nextDescendents": []
-      },
-      {
-        "_id": "",
-        "source": "REQUEST_VALUES",
-        "extensionClassName": "test_class",
-        "fixedValue": "xyz.com",
-        "contextPath": "/am",
-        "_type": {
-          "_id": "baseurl",
-          "name": "Base URL Source",
-          "collection": false
-        },
-        "nextDescendents": []
       }
     ],
-    "resultCount": 3,
+    "resultCount": 2,
     "pagedResultsCookie": null,
     "totalPagedResultsPolicy": "EXACT",
-    "totalPagedResults": 3,
+    "totalPagedResults": 2,
     "remainingPagedResults": -1
   }
 }
