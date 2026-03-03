@@ -1,0 +1,25 @@
+{
+  "result": [
+    {
+      "_id": "audit",
+      "name": "Audit Logging"
+    },
+    {
+      "_id": "email",
+      "name": "Email Service"
+    },
+    {
+      "_id": "dashboard",
+      "name": "Dashboard"
+    },
+    {
+      "_id": "policyconfiguration",
+      "name": "Policy Configuration"
+    }
+  ],
+  "resultCount": 4,
+  "pagedResultsCookie": null,
+  "totalPagedResultsPolicy": "EXACT",
+  "totalPagedResults": 4,
+  "remainingPagedResults": -1
+}
