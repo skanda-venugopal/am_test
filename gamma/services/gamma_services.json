@@ -1,0 +1,72 @@
+{
+  "audit": {
+    "auditEnabled": true,
+    "whitelistFieldFilters": [
+      "xyz"
+    ],
+    "blacklistFieldFilters": [
+      "lmno"
+    ],
+    "_id": "",
+    "_type": {
+      "_id": "audit",
+      "name": "Audit Logging",
+      "collection": false
+    }
+  },
+  "email": {
+    "emailAddressAttribute": "mail",
+    "transportType": "[Empty]",
+    "emailRateLimitSeconds": 1,
+    "port": 465,
+    "emailImplClassName": "org.forgerock.openam.services.email.MailServerImpl",
+    "sslState": "SSL",
+    "from": "xxx@gmail.com",
+    "_id": "",
+    "_type": {
+      "_id": "email",
+      "name": "Email Service",
+      "collection": false
+    }
+  },
+  "dashboard": {
+    "assignedDashboard": [
+      "abcd"
+    ],
+    "_id": "",
+    "_type": {
+      "_id": "dashboard",
+      "name": "Dashboard",
+      "collection": false
+    }
+  },
+  "policyconfiguration": {
+    "userAliasEnabled": false,
+    "connectionPoolMinimumSize": 1,
+    "maximumSearchResults": 100,
+    "policyHeartbeatTimeUnit": "SECONDS",
+    "usersSearchAttribute": "uid",
+    "searchTimeout": 5,
+    "policyHeartbeatInterval": 10,
+    "usersSearchScope": "SCOPE_SUB",
+    "subjectsResultTTL": 10,
+    "checkIfResourceTypeExists": true,
+    "connectionPoolMaximumSize": 10,
+    "sslEnabled": true,
+    "bindDn": "cn=Directory Manager",
+    "ldapServer": [
+      "localhost:50636"
+    ],
+    "mtlsEnabled": false,
+    "bindPassword": null,
+    "realmSearchFilter": "(objectclass=sunismanagedorganization)",
+    "usersSearchFilter": "(objectclass=inetorgperson)",
+    "usersBaseDn": "dc=openam,dc=forgerock,dc=org",
+    "_id": "",
+    "_type": {
+      "_id": "policyconfiguration",
+      "name": "Policy Configuration",
+      "collection": false
+    }
+  }
+}
