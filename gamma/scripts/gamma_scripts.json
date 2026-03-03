@@ -3735,7 +3735,7 @@
         "evaluatorVersion": "1.0"
       },
       {
-        "_id": "9de3eb62-f131-4fac-a294-7bd170fd4acb",
+        "_id": "9de3eb62-f131-4fac-a294-7bd170fd4acb_BREAK",
         "name": "Scripted Policy Condition",
         "description": "Default global script for Scripted Policy Conditions",
         "script": [
@@ -3898,4 +3898,5 @@
     "totalPagedResults": -1,
     "remainingPagedResults": 0
   }
+
 }
