@@ -687,7 +687,7 @@
         }
       },
       {
-        "_id": "service-api",
+        "_id": "service-api_BREAK",
         "overrideOAuth2ClientConfig": {
           "issueRefreshToken": true,
           "validateScopePluginType": "PROVIDER",
@@ -2107,5 +2107,6 @@
   }
 
 }
+
 
 
