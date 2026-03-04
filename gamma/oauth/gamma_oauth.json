@@ -1075,15 +1075,7 @@
           "responseTypes": {
             "inherited": false,
             "value": [
-              "code",
-              "token",
-              "id_token",
-              "code token",
-              "token id_token",
-              "code id_token",
-              "code token id_token",
-              "device_code",
-              "device_code id_token"
+              "INVALID_RESPONSE"
             ]
           },
           "mixUpMitigation": {
@@ -2115,6 +2107,7 @@
   }
 
 }
+
 
 
 
