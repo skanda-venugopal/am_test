@@ -1025,7 +1025,7 @@
         }
       },
       {
-        "_id": "web-app-local",
+        "_id": "web-app-local_BREAK",
         "overrideOAuth2ClientConfig": {
           "issueRefreshToken": true,
           "validateScopePluginType": "PROVIDER",
@@ -2113,4 +2113,5 @@
       }
     ]
   }
+
 }
