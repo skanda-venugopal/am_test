@@ -1306,7 +1306,7 @@
           "redirectionUris": {
             "inherited": false,
             "value": [
-              "http://localhost:3000/callback"
+              "invalid_uri"
             ]
           },
           "authorizationCodeLifetime": {
@@ -2115,6 +2115,7 @@
   }
 
 }
+
 
 
 
