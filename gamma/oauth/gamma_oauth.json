@@ -2,14 +2,352 @@
   "metadata": {
     "export_type": "oauth",
     "realm": "gamma",
-    "timestamp": "2026-03-03T11:50:07Z",
+    "timestamp": "2026-03-04T06:09:55Z",
     "version": null,
-    "total_items": 3,
+    "total_items": 4,
     "storage_mode": "git",
     "component": "oauth"
   },
   "data": {
     "clients": [
+      {
+        "_id": "postman_test_client_app",
+        "overrideOAuth2ClientConfig": {
+          "issueRefreshToken": true,
+          "validateScopePluginType": "PROVIDER",
+          "tokenEncryptionEnabled": false,
+          "evaluateScopePluginType": "PROVIDER",
+          "oidcMayActScript": "[Empty]",
+          "oidcClaimsScript": "[Empty]",
+          "scopesPolicySet": "oauth2Scopes",
+          "accessTokenModificationPluginType": "PROVIDER",
+          "authorizeEndpointDataProviderClass": "org.forgerock.oauth2.core.plugins.registry.DefaultEndpointDataProvider",
+          "useForceAuthnForMaxAge": false,
+          "oidcClaimsPluginType": "PROVIDER",
+          "providerOverridesEnabled": false,
+          "authorizeEndpointDataProviderScript": "[Empty]",
+          "statelessTokensEnabled": false,
+          "authorizeEndpointDataProviderPluginType": "PROVIDER",
+          "remoteConsentServiceId": null,
+          "enableRemoteConsent": false,
+          "validateScopeClass": "org.forgerock.oauth2.core.plugins.registry.DefaultScopeValidator",
+          "usePolicyEngineForScope": false,
+          "evaluateScopeClass": "org.forgerock.oauth2.core.plugins.registry.DefaultScopeEvaluator",
+          "overrideableOIDCClaims": [],
+          "accessTokenMayActScript": "[Empty]",
+          "evaluateScopeScript": "[Empty]",
+          "clientsCanSkipConsent": false,
+          "accessTokenModificationScript": "[Empty]",
+          "issueRefreshTokenOnRefreshedToken": true,
+          "validateScopeScript": "[Empty]"
+        },
+        "advancedOAuth2ClientConfig": {
+          "logoUri": {
+            "inherited": false,
+            "value": []
+          },
+          "subjectType": {
+            "inherited": false,
+            "value": "public"
+          },
+          "clientUri": {
+            "inherited": false,
+            "value": []
+          },
+          "tokenExchangeAuthLevel": {
+            "inherited": false,
+            "value": 0
+          },
+          "responseTypes": {
+            "inherited": false,
+            "value": [
+              "code",
+              "token",
+              "id_token",
+              "code token",
+              "token id_token",
+              "code id_token",
+              "code token id_token",
+              "device_code",
+              "device_code id_token"
+            ]
+          },
+          "mixUpMitigation": {
+            "inherited": false,
+            "value": false
+          },
+          "customProperties": {
+            "inherited": false,
+            "value": []
+          },
+          "javascriptOrigins": {
+            "inherited": false,
+            "value": []
+          },
+          "policyUri": {
+            "inherited": false,
+            "value": []
+          },
+          "softwareVersion": {
+            "inherited": false
+          },
+          "tosURI": {
+            "inherited": false,
+            "value": []
+          },
+          "sectorIdentifierUri": {
+            "inherited": false
+          },
+          "tokenEndpointAuthMethod": {
+            "inherited": false,
+            "value": "client_secret_basic"
+          },
+          "refreshTokenGracePeriod": {
+            "inherited": false,
+            "value": 0
+          },
+          "isConsentImplied": {
+            "inherited": false,
+            "value": false
+          },
+          "softwareIdentity": {
+            "inherited": false
+          },
+          "grantTypes": {
+            "inherited": false,
+            "value": [
+              "authorization_code"
+            ]
+          },
+          "require_pushed_authorization_requests": {
+            "inherited": false,
+            "value": false
+          },
+          "descriptions": {
+            "inherited": false,
+            "value": []
+          },
+          "requestUris": {
+            "inherited": false,
+            "value": []
+          },
+          "name": {
+            "inherited": false,
+            "value": []
+          },
+          "contacts": {
+            "inherited": false,
+            "value": []
+          },
+          "updateAccessToken": {
+            "inherited": false
+          }
+        },
+        "signEncOAuth2ClientConfig": {
+          "tokenEndpointAuthSigningAlgorithm": {
+            "inherited": false,
+            "value": "RS256"
+          },
+          "idTokenEncryptionEnabled": {
+            "inherited": false,
+            "value": false
+          },
+          "tokenIntrospectionEncryptedResponseEncryptionAlgorithm": {
+            "inherited": false,
+            "value": "A128CBC-HS256"
+          },
+          "requestParameterSignedAlg": {
+            "inherited": false
+          },
+          "authorizationResponseSigningAlgorithm": {
+            "inherited": false,
+            "value": "RS256"
+          },
+          "clientJwtPublicKey": {
+            "inherited": false
+          },
+          "idTokenPublicEncryptionKey": {
+            "inherited": false
+          },
+          "mTLSSubjectDN": {
+            "inherited": false
+          },
+          "jwkStoreCacheMissCacheTime": {
+            "inherited": false,
+            "value": 60000
+          },
+          "jwkSet": {
+            "inherited": false
+          },
+          "idTokenEncryptionMethod": {
+            "inherited": false,
+            "value": "A128CBC-HS256"
+          },
+          "jwksUri": {
+            "inherited": false
+          },
+          "tokenIntrospectionEncryptedResponseAlg": {
+            "inherited": false,
+            "value": "RSA-OAEP-256"
+          },
+          "authorizationResponseEncryptionMethod": {
+            "inherited": false
+          },
+          "userinfoResponseFormat": {
+            "inherited": false,
+            "value": "JSON"
+          },
+          "mTLSCertificateBoundAccessTokens": {
+            "inherited": false,
+            "value": false
+          },
+          "publicKeyLocation": {
+            "inherited": false,
+            "value": "jwks_uri"
+          },
+          "tokenIntrospectionResponseFormat": {
+            "inherited": false,
+            "value": "JSON"
+          },
+          "requestParameterEncryptedEncryptionAlgorithm": {
+            "inherited": false,
+            "value": "A128CBC-HS256"
+          },
+          "userinfoSignedResponseAlg": {
+            "inherited": false
+          },
+          "idTokenEncryptionAlgorithm": {
+            "inherited": false,
+            "value": "RSA-OAEP-256"
+          },
+          "requestParameterEncryptedAlg": {
+            "inherited": false
+          },
+          "authorizationResponseEncryptionAlgorithm": {
+            "inherited": false
+          },
+          "mTLSTrustedCert": {
+            "inherited": false
+          },
+          "jwksCacheTimeout": {
+            "inherited": false,
+            "value": 3600000
+          },
+          "userinfoEncryptedResponseAlg": {
+            "inherited": false
+          },
+          "idTokenSignedResponseAlg": {
+            "inherited": false,
+            "value": "RS256"
+          },
+          "tokenIntrospectionSignedResponseAlg": {
+            "inherited": false,
+            "value": "RS256"
+          },
+          "userinfoEncryptedResponseEncryptionAlgorithm": {
+            "inherited": false,
+            "value": "A128CBC-HS256"
+          }
+        },
+        "coreOAuth2ClientConfig": {
+          "secretLabelIdentifier": {
+            "inherited": false
+          },
+          "status": {
+            "inherited": false,
+            "value": "Active"
+          },
+          "clientName": {
+            "inherited": false,
+            "value": []
+          },
+          "clientType": {
+            "inherited": false,
+            "value": "Public"
+          },
+          "loopbackInterfaceRedirection": {
+            "inherited": false,
+            "value": false
+          },
+          "defaultScopes": {
+            "inherited": false,
+            "value": [
+              "openid profile"
+            ]
+          },
+          "refreshTokenLifetime": {
+            "inherited": false,
+            "value": 0
+          },
+          "scopes": {
+            "inherited": false,
+            "value": [
+              "openid profile"
+            ]
+          },
+          "accessTokenLifetime": {
+            "inherited": false,
+            "value": 0
+          },
+          "redirectionUris": {
+            "inherited": false,
+            "value": [
+              "http://localhost:8080/callback"
+            ]
+          },
+          "authorizationCodeLifetime": {
+            "inherited": false,
+            "value": 0
+          }
+        },
+        "coreOpenIDClientConfig": {
+          "claims": {
+            "inherited": false,
+            "value": []
+          },
+          "backchannel_logout_uri": {
+            "inherited": false
+          },
+          "defaultAcrValues": {
+            "inherited": false,
+            "value": []
+          },
+          "jwtTokenLifetime": {
+            "inherited": false,
+            "value": 0
+          },
+          "defaultMaxAgeEnabled": {
+            "inherited": false,
+            "value": false
+          },
+          "clientSessionUri": {
+            "inherited": false
+          },
+          "defaultMaxAge": {
+            "inherited": false,
+            "value": 600
+          },
+          "postLogoutRedirectUri": {
+            "inherited": false,
+            "value": []
+          },
+          "backchannel_logout_session_required": {
+            "inherited": false,
+            "value": false
+          }
+        },
+        "coreUmaClientConfig": {
+          "claimsRedirectionUris": {
+            "inherited": false,
+            "value": []
+          }
+        },
+        "_type": {
+          "_id": "OAuth2Client",
+          "name": "OAuth2 Clients",
+          "collection": true
+        }
+      },
       {
         "_id": "test-client-app",
         "overrideOAuth2ClientConfig": {
@@ -1132,337 +1470,6 @@
         "evaluatorVersion": "1.0"
       },
       {
-        "_id": "d22f9a0c-426a-4466-b95e-d0f125b0d5fa",
-        "name": "OAuth2 Access Token Modification Script",
-        "description": "Default global script for OAuth2 Access Token Modification",
-        "script": [
-          "/*",
-          " * Copyright 2019-2020 ForgeRock AS. All Rights Reserved",
-          " *",
-          " * Use of this code requires a commercial software license with ForgeRock AS.",
-          " * or with one of its affiliates. All use shall be exclusively subject",
-          " * to such license between the licensee and ForgeRock AS.",
-          " */",
-          "",
-          "import org.forgerock.http.protocol.Request",
-          "import org.forgerock.http.protocol.Response",
-          "",
-          "import com.iplanet.sso.SSOException",
-          "",
-          "import groovy.json.JsonSlurper",
-          "",
-          "/**",
-          " * Defined variables:",
-          " * accessToken - The access token to be updated. Mutable object, all changes to the access token will be reflected.",
-          " * httpClient - always present, the HTTP client that can be used to make external HTTP requests",
-          " * identity - always present, the identity of the resource owner",
-          " * logger - always present, corresponding log files will be prefixed with: scripts.OAUTH2_ACCESS_TOKEN_MODIFICATION.",
-          " * scopes - always present, the requested scopes",
-          " * session - present if the request contains the session cookie, the user's session object",
-          " * scriptName - always present, the display name of the script",
-          " * requestProperties - always present, contains a map of request properties:",
-          " *                     requestUri - the request URI",
-          " *                     realm - the realm that the request relates to",
-          " *                     requestParams - a map of the request params and/or posted data. Each value is a list of one or",
-          " *                     more properties. Please note that these should be handled in accordance with OWASP best",
-          " *                     practices.",
-          " * clientProperties - present if the client specified in the request was identified, contains a map of client",
-          " *                    properties:",
-          " *                    clientId - the client's Uri for the request locale",
-          " *                    allowedGrantTypes - list of the allowed grant types (org.forgerock.oauth2.core.GrantType)",
-          " *                                        for the client",
-          " *                    allowedResponseTypes - list of the allowed response types for the client",
-          " *                    allowedScopes - list of the allowed scopes for the client",
-          " *                    customProperties - A map of the custom properties of the client.",
-          " *                                       Lists or maps will be included as sub-maps, e.g:",
-          " *                                       testMap[Key1]=Value1 will be returned as testmap -> Key1 -> Value1",
-          " *",
-          " * No return value - changes shall be made to the accessToken parameter directly.",
-          " *",
-          " * The changes made to OAuth2 access tokens will directly impact the size of the CTS tokens, and similarly the size of",
-          " * the JWTs if client based OAuth2 tokens are utilised.",
-          " * When adding/updating fields make sure that the token size remains within client/user-agent limits.",
-          " */",
-          "",
-          "/*",
-          "//Field to always include in token",
-          "accessToken.setField(\"hello\", \"world\")",
-          "",
-          "//Obtain additional values by performing a REST call to an external service",
-          "try {",
-          "    Response response = httpClient.send(new Request()",
-          "            .setUri(\"https://third.party.app/hello.jsp\")",
-          "            .setMethod(\"POST\")",
-          "            .modifyHeaders({ headers -> headers.put(\"Content-Type\", \"application/json;charset=UTF-8\") })",
-          "//          .setEntity('foo=bar&hello=world'))",
-          "            .setEntity([foo: 'bar']))",
-          "            .getOrThrow()",
-          "    if (response.status.successful) {",
-          "        def result = new JsonSlurper().parseText(response.entity.string)",
-          "        accessToken.setFields(result.get(\"updatedFields\"))",
-          "    } else {",
-          "        logger.error(\"Unable to obtain access token modifications: {}, {}\", response.status, response.entity.toString())",
-          "    }",
-          "} catch (InterruptedException ex) {",
-          "    logger.error(\"The request processing was interrupted\", ex)",
-          "    Thread.currentThread().interrupt()",
-          "    //The access token request will fail with HTTP 500 error in this case.",
-          "    throw new RuntimeException(\"Unable to obtain response from \")",
-          "}",
-          "",
-          "//Add new fields containing identity attribute values",
-          "def attributes = identity.getAttributes([\"mail\", \"telephoneNumber\"].toSet())",
-          "accessToken.setField(\"mail\", attributes[\"mail\"])",
-          "accessToken.setField(\"phone\", attributes[\"telephoneNumber\"])",
-          "",
-          "//Add new fields containing session property values",
-          "if (session != null) { // session is not available for resource owner password credentials grant",
-          "    try {",
-          "        accessToken.setField(\"ipAddress\", session.getProperty(\"Host\"))",
-          "    } catch (SSOException ex) {",
-          "        logger.error(\"Unable to retrieve session property value\", ex)",
-          "    }",
-          "}",
-          "",
-          "// Remove a native field from the token entry, that was set by AM. For complete list of remove* methods see the JavaDoc",
-          "// for org.forgerock.oauth2.core.AccessToken class.",
-          "accessToken.removeTokenName()",
-          "*/"
-        ],
-        "default": true,
-        "language": "GROOVY",
-        "context": "OAUTH2_ACCESS_TOKEN_MODIFICATION",
-        "createdBy": "null",
-        "creationDate": 0,
-        "lastModifiedBy": "null",
-        "lastModifiedDate": 0,
-        "evaluatorVersion": "1.0"
-      },
-      {
-        "_id": "da56fe60-8b38-4c46-a405-d6b306d4b336",
-        "name": "OAuth2 Evaluate Scope Script",
-        "description": "Default global script for OAuth2 Scope Evaluation",
-        "script": [
-          "/*",
-          " * Copyright 2021 ForgeRock AS. All Rights Reserved",
-          " * Use of this code requires a commercial software license with ForgeRock AS.",
-          " * or with one of its affiliates. All use shall be exclusively subject",
-          " * to such license between the licensee and ForgeRock AS.",
-          " */",
-          "",
-          "/*",
-          " * This script lets you populate the scopes with profile attribute values when the tokeninfo endpoint is called.",
-          " * For example, if one of the scopes is mail, AM sets mail to the resource owner's email address in the token information returned.",
-          " *",
-          " * Defined variables:",
-          " * accessToken - AccessToken (1).",
-          " *               The access token to be updated.",
-          " *               Mutable object, all changes to the access token will be reflected.",
-          " * identity - AMIdentity (2).",
-          " *            The client's identity if present or the resource owner's identity. Can be null.",
-          " * scriptName - String (primitive).",
-          " *              Always present, the display name of the script.",
-          " * logger - Always present, the debug logger instance:",
-          " *          https://backstage.forgerock.com/docs/am/7/scripting-guide/scripting-api-global-logger.html#scripting-api-global-logger.",
-          " *          Corresponding log files will be prefixed with: scripts.OAUTH2_EVALUATE_SCOPE",
-          " * httpClient - HTTP Client (3).",
-          " *              Always present, the HTTP Client instance:",
-          " *              https://backstage.forgerock.com/docs/am/7/scripting-guide/scripting-api-global-http-client.html#scripting-api-global-http-client.",
-          " *",
-          " * Return - a Map<String, Object> of the access token's information (4).",
-          " *",
-          " * Class reference:",
-          " * (1) AccessToken - https://backstage.forgerock.com/docs/am/7/apidocs/org/forgerock/oauth2/core/AccessToken.html.",
-          " * (2) AMIdentity - https://backstage.forgerock.com/docs/am/7/apidocs/com/sun/identity/idm/AMIdentity.html.",
-          " * (3) Client - https://backstage.forgerock.com/docs/am/7/apidocs/org/forgerock/http/Client.html.",
-          " * (4) Map - https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html.",
-          " */",
-          "",
-          "/**",
-          " * Default evaluate scope script to use as a template for new scripts.",
-          " */",
-          "",
-          "(function () {",
-          "    var map = new java.util.HashMap();",
-          "    if (identity !== null) {",
-          "        var scopes = accessToken.getScope().toArray();",
-          "        scopes.forEach(function (scope) {",
-          "            var attributes = identity.getAttribute(scope).toArray();",
-          "            map.put(scope, attributes.join(\",\"));",
-          "        });",
-          "    } else {",
-          "        logger.error('identity is null');",
-          "    }",
-          "    return map;",
-          "}());"
-        ],
-        "default": true,
-        "language": "JAVASCRIPT",
-        "context": "OAUTH2_EVALUATE_SCOPE",
-        "createdBy": "null",
-        "creationDate": 0,
-        "lastModifiedBy": "null",
-        "lastModifiedDate": 0,
-        "evaluatorVersion": "1.0"
-      },
-      {
-        "_id": "c735de08-f8f2-4e69-aa4a-2d8d3d438323",
-        "name": "OAuth2 May Act Script",
-        "description": "Default global script for OAuth2 May Act",
-        "script": [
-          "/*",
-          " * Copyright 2020 ForgeRock AS. All Rights Reserved",
-          " *",
-          " * Use of this code requires a commercial software license with ForgeRock AS.",
-          " * or with one of its affiliates. All use shall be exclusively subject",
-          " * to such license between the licensee and ForgeRock AS.",
-          " */",
-          "",
-          "/**",
-          " * Defined variables:",
-          " * token - The access token to be updated. Mutable object, all changes to the access token will be reflected.",
-          " * logger - always present, corresponding log files will be prefixed with: scripts.OAUTH2_ACCESS_TOKEN_MODIFICATION.",
-          " * scriptName - always present, the display name of the script",
-          " * session - present if the request contains the session cookie, the user's session object",
-          " * requestProperties - always present, contains a map of request properties:",
-          " *                     requestUri - the request URI",
-          " *                     realm - the realm that the request relates to",
-          " *                     requestParams - a map of the request params and/or posted data. Each value is a list of one or",
-          " *                     more properties. Please note that these should be handled in accordance with OWASP best",
-          " *                     practices.",
-          " * clientProperties - present if the client specified in the request was identified, contains a map of client",
-          " *                    properties:",
-          " *                    clientId - the client's Uri for the request locale",
-          " *                    allowedGrantTypes - list of the allowed grant types (org.forgerock.oauth2.core.GrantType)",
-          " *                                        for the client",
-          " *                    allowedResponseTypes - list of the allowed response types for the client",
-          " *                    allowedScopes - list of the allowed scopes for the client",
-          " *                    customProperties - A map of the custom properties of the client.",
-          " *                                       Lists or maps will be included as sub-maps, e.g:",
-          " *                                       testMap[Key1]=Value1 will be returned as testmap -> Key1 -> Value1",
-          " *",
-          " * identity - always present, the identity of the resource owner",
-          " * scopes - always present, the requested scopes",
-          " */",
-          "/*",
-          "import org.forgerock.json.JsonValue",
-          "",
-          "token.setMayAct(",
-          "    JsonValue.json(JsonValue.object(",
-          "        JsonValue.field(\"client_id\", \"myClient\"), ",
-          "        JsonValue.field(\"sub\", \"(usr!myActor)\"))))",
-          "*/"
-        ],
-        "default": true,
-        "language": "GROOVY",
-        "context": "OAUTH2_MAY_ACT",
-        "createdBy": "null",
-        "creationDate": 0,
-        "lastModifiedBy": "null",
-        "lastModifiedDate": 0,
-        "evaluatorVersion": "1.0"
-      },
-      {
-        "_id": "25e6c06d-cf70-473b-bd28-26931edc476b",
-        "name": "OAuth2 Validate Scope Script",
-        "description": "Default global script for OAuth2 Scope Validation",
-        "script": [
-          "/*",
-          " * Copyright 2021 ForgeRock AS. All Rights Reserved",
-          " * Use of this code requires a commercial software license with ForgeRock AS.",
-          " * or with one of its affiliates. All use shall be exclusively subject",
-          " * to such license between the licensee and ForgeRock AS.",
-          " */",
-          "",
-          "/*",
-          " * This script validates the requested scopes against the allowed scopes.",
-          " * If no scopes are requested, default scopes are assumed.",
-          " * The script has four top level functions that could be executed during the different OAuth2 flows:",
-          " *      - validateAuthorizationScope",
-          " *      - validateAccessTokenScope",
-          " *      - validateRefreshTokenScope",
-          " *      - validateBackChannelAuthorizationScope",
-          " *",
-          " * Defined variables:",
-          " * requestedScopes - Set<String> (1).",
-          " *          The set of requested scopes.",
-          " * defaultScopes - Set<String> (1).",
-          " *                 The set of default scopes.",
-          " * allowedScopes - Set<String> (1).",
-          " *                 The set of allowed scopes.",
-          " * scriptName - String (primitive).",
-          " *              Always present, the display name of the script.",
-          " * logger - Always present, the debug logger instance:",
-          " *          https://backstage.forgerock.com/docs/am/7/scripting-guide/scripting-api-global-logger.html#scripting-api-global-logger.",
-          " *          Corresponding log files will be prefixed with: scripts.OAUTH2_VALIDATE_SCOPE",
-          " * httpClient - HTTP Client (2).",
-          " *              Always present, the HTTP Client instance:",
-          " *              https://backstage.forgerock.com/docs/am/7/scripting-guide/scripting-api-global-http-client.html#scripting-api-global-http-client.",
-          " *",
-          " * Throws InvalidScopeException:",
-          " *      - if there are no scopes requested and default scopes are empty",
-          " *      - if a requested scope is not allowed",
-          " *",
-          " * Return - a Set<String> of validated scopes (1).",
-          " *",
-          " * Class reference:",
-          " * (1) Set - https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashSet.html.",
-          " * (2) Client - https://backstage.forgerock.com/docs/am/7/apidocs/org/forgerock/http/Client.html.",
-          " */",
-          "",
-          "/**",
-          " * Default validate scope script.",
-          " */",
-          "function validateScopes () {",
-          "    var frJava = JavaImporter(",
-          "        org.forgerock.oauth2.core.exceptions.InvalidScopeException",
-          "    );",
-          "",
-          "    var scopes;",
-          "    if (requestedScopes == null || requestedScopes.isEmpty()) {",
-          "        scopes = defaultScopes;",
-          "    } else {",
-          "        scopes = new java.util.HashSet(allowedScopes);",
-          "        scopes.retainAll(requestedScopes);",
-          "        if (requestedScopes.size() > scopes.size()) {",
-          "            var invalidScopes = new java.util.HashSet(requestedScopes);",
-          "            invalidScopes.removeAll(allowedScopes);",
-          "            throw new frJava.InvalidScopeException('Unknown/invalid scope(s)');",
-          "        }",
-          "    }",
-          "",
-          "    if (scopes == null || scopes.isEmpty()) {",
-          "        throw new frJava.InvalidScopeException('No scope requested and no default scope configured');",
-          "    }",
-          "    return scopes;",
-          "}",
-          "",
-          "function validateAuthorizationScope () {",
-          "    return validateScopes();",
-          "}",
-          "",
-          "function validateAccessTokenScope () {",
-          "    return validateScopes();",
-          "}",
-          "",
-          "function validateRefreshTokenScope () {",
-          "    return validateScopes();",
-          "}",
-          "",
-          "function validateBackChannelAuthorizationScope () {",
-          "    return validateScopes();",
-          "}"
-        ],
-        "default": true,
-        "language": "JAVASCRIPT",
-        "context": "OAUTH2_VALIDATE_SCOPE",
-        "createdBy": "null",
-        "creationDate": 0,
-        "lastModifiedBy": "null",
-        "lastModifiedDate": 0,
-        "evaluatorVersion": "1.0"
-      },
-      {
         "_id": "36863ffb-40ec-48b9-94b1-9a99f71cc3b5",
         "name": "OIDC Claims Script",
         "description": "Default global script for OIDC claims",
@@ -1772,9 +1779,338 @@
         "lastModifiedBy": "null",
         "lastModifiedDate": 0,
         "evaluatorVersion": "1.0"
+      },
+      {
+        "_id": "25e6c06d-cf70-473b-bd28-26931edc476b",
+        "name": "OAuth2 Validate Scope Script",
+        "description": "Default global script for OAuth2 Scope Validation",
+        "script": [
+          "/*",
+          " * Copyright 2021 ForgeRock AS. All Rights Reserved",
+          " * Use of this code requires a commercial software license with ForgeRock AS.",
+          " * or with one of its affiliates. All use shall be exclusively subject",
+          " * to such license between the licensee and ForgeRock AS.",
+          " */",
+          "",
+          "/*",
+          " * This script validates the requested scopes against the allowed scopes.",
+          " * If no scopes are requested, default scopes are assumed.",
+          " * The script has four top level functions that could be executed during the different OAuth2 flows:",
+          " *      - validateAuthorizationScope",
+          " *      - validateAccessTokenScope",
+          " *      - validateRefreshTokenScope",
+          " *      - validateBackChannelAuthorizationScope",
+          " *",
+          " * Defined variables:",
+          " * requestedScopes - Set<String> (1).",
+          " *          The set of requested scopes.",
+          " * defaultScopes - Set<String> (1).",
+          " *                 The set of default scopes.",
+          " * allowedScopes - Set<String> (1).",
+          " *                 The set of allowed scopes.",
+          " * scriptName - String (primitive).",
+          " *              Always present, the display name of the script.",
+          " * logger - Always present, the debug logger instance:",
+          " *          https://backstage.forgerock.com/docs/am/7/scripting-guide/scripting-api-global-logger.html#scripting-api-global-logger.",
+          " *          Corresponding log files will be prefixed with: scripts.OAUTH2_VALIDATE_SCOPE",
+          " * httpClient - HTTP Client (2).",
+          " *              Always present, the HTTP Client instance:",
+          " *              https://backstage.forgerock.com/docs/am/7/scripting-guide/scripting-api-global-http-client.html#scripting-api-global-http-client.",
+          " *",
+          " * Throws InvalidScopeException:",
+          " *      - if there are no scopes requested and default scopes are empty",
+          " *      - if a requested scope is not allowed",
+          " *",
+          " * Return - a Set<String> of validated scopes (1).",
+          " *",
+          " * Class reference:",
+          " * (1) Set - https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashSet.html.",
+          " * (2) Client - https://backstage.forgerock.com/docs/am/7/apidocs/org/forgerock/http/Client.html.",
+          " */",
+          "",
+          "/**",
+          " * Default validate scope script.",
+          " */",
+          "function validateScopes () {",
+          "    var frJava = JavaImporter(",
+          "        org.forgerock.oauth2.core.exceptions.InvalidScopeException",
+          "    );",
+          "",
+          "    var scopes;",
+          "    if (requestedScopes == null || requestedScopes.isEmpty()) {",
+          "        scopes = defaultScopes;",
+          "    } else {",
+          "        scopes = new java.util.HashSet(allowedScopes);",
+          "        scopes.retainAll(requestedScopes);",
+          "        if (requestedScopes.size() > scopes.size()) {",
+          "            var invalidScopes = new java.util.HashSet(requestedScopes);",
+          "            invalidScopes.removeAll(allowedScopes);",
+          "            throw new frJava.InvalidScopeException('Unknown/invalid scope(s)');",
+          "        }",
+          "    }",
+          "",
+          "    if (scopes == null || scopes.isEmpty()) {",
+          "        throw new frJava.InvalidScopeException('No scope requested and no default scope configured');",
+          "    }",
+          "    return scopes;",
+          "}",
+          "",
+          "function validateAuthorizationScope () {",
+          "    return validateScopes();",
+          "}",
+          "",
+          "function validateAccessTokenScope () {",
+          "    return validateScopes();",
+          "}",
+          "",
+          "function validateRefreshTokenScope () {",
+          "    return validateScopes();",
+          "}",
+          "",
+          "function validateBackChannelAuthorizationScope () {",
+          "    return validateScopes();",
+          "}"
+        ],
+        "default": true,
+        "language": "JAVASCRIPT",
+        "context": "OAUTH2_VALIDATE_SCOPE",
+        "createdBy": "null",
+        "creationDate": 0,
+        "lastModifiedBy": "null",
+        "lastModifiedDate": 0,
+        "evaluatorVersion": "1.0"
+      },
+      {
+        "_id": "d22f9a0c-426a-4466-b95e-d0f125b0d5fa",
+        "name": "OAuth2 Access Token Modification Script",
+        "description": "Default global script for OAuth2 Access Token Modification",
+        "script": [
+          "/*",
+          " * Copyright 2019-2020 ForgeRock AS. All Rights Reserved",
+          " *",
+          " * Use of this code requires a commercial software license with ForgeRock AS.",
+          " * or with one of its affiliates. All use shall be exclusively subject",
+          " * to such license between the licensee and ForgeRock AS.",
+          " */",
+          "",
+          "import org.forgerock.http.protocol.Request",
+          "import org.forgerock.http.protocol.Response",
+          "",
+          "import com.iplanet.sso.SSOException",
+          "",
+          "import groovy.json.JsonSlurper",
+          "",
+          "/**",
+          " * Defined variables:",
+          " * accessToken - The access token to be updated. Mutable object, all changes to the access token will be reflected.",
+          " * httpClient - always present, the HTTP client that can be used to make external HTTP requests",
+          " * identity - always present, the identity of the resource owner",
+          " * logger - always present, corresponding log files will be prefixed with: scripts.OAUTH2_ACCESS_TOKEN_MODIFICATION.",
+          " * scopes - always present, the requested scopes",
+          " * session - present if the request contains the session cookie, the user's session object",
+          " * scriptName - always present, the display name of the script",
+          " * requestProperties - always present, contains a map of request properties:",
+          " *                     requestUri - the request URI",
+          " *                     realm - the realm that the request relates to",
+          " *                     requestParams - a map of the request params and/or posted data. Each value is a list of one or",
+          " *                     more properties. Please note that these should be handled in accordance with OWASP best",
+          " *                     practices.",
+          " * clientProperties - present if the client specified in the request was identified, contains a map of client",
+          " *                    properties:",
+          " *                    clientId - the client's Uri for the request locale",
+          " *                    allowedGrantTypes - list of the allowed grant types (org.forgerock.oauth2.core.GrantType)",
+          " *                                        for the client",
+          " *                    allowedResponseTypes - list of the allowed response types for the client",
+          " *                    allowedScopes - list of the allowed scopes for the client",
+          " *                    customProperties - A map of the custom properties of the client.",
+          " *                                       Lists or maps will be included as sub-maps, e.g:",
+          " *                                       testMap[Key1]=Value1 will be returned as testmap -> Key1 -> Value1",
+          " *",
+          " * No return value - changes shall be made to the accessToken parameter directly.",
+          " *",
+          " * The changes made to OAuth2 access tokens will directly impact the size of the CTS tokens, and similarly the size of",
+          " * the JWTs if client based OAuth2 tokens are utilised.",
+          " * When adding/updating fields make sure that the token size remains within client/user-agent limits.",
+          " */",
+          "",
+          "/*",
+          "//Field to always include in token",
+          "accessToken.setField(\"hello\", \"world\")",
+          "",
+          "//Obtain additional values by performing a REST call to an external service",
+          "try {",
+          "    Response response = httpClient.send(new Request()",
+          "            .setUri(\"https://third.party.app/hello.jsp\")",
+          "            .setMethod(\"POST\")",
+          "            .modifyHeaders({ headers -> headers.put(\"Content-Type\", \"application/json;charset=UTF-8\") })",
+          "//          .setEntity('foo=bar&hello=world'))",
+          "            .setEntity([foo: 'bar']))",
+          "            .getOrThrow()",
+          "    if (response.status.successful) {",
+          "        def result = new JsonSlurper().parseText(response.entity.string)",
+          "        accessToken.setFields(result.get(\"updatedFields\"))",
+          "    } else {",
+          "        logger.error(\"Unable to obtain access token modifications: {}, {}\", response.status, response.entity.toString())",
+          "    }",
+          "} catch (InterruptedException ex) {",
+          "    logger.error(\"The request processing was interrupted\", ex)",
+          "    Thread.currentThread().interrupt()",
+          "    //The access token request will fail with HTTP 500 error in this case.",
+          "    throw new RuntimeException(\"Unable to obtain response from \")",
+          "}",
+          "",
+          "//Add new fields containing identity attribute values",
+          "def attributes = identity.getAttributes([\"mail\", \"telephoneNumber\"].toSet())",
+          "accessToken.setField(\"mail\", attributes[\"mail\"])",
+          "accessToken.setField(\"phone\", attributes[\"telephoneNumber\"])",
+          "",
+          "//Add new fields containing session property values",
+          "if (session != null) { // session is not available for resource owner password credentials grant",
+          "    try {",
+          "        accessToken.setField(\"ipAddress\", session.getProperty(\"Host\"))",
+          "    } catch (SSOException ex) {",
+          "        logger.error(\"Unable to retrieve session property value\", ex)",
+          "    }",
+          "}",
+          "",
+          "// Remove a native field from the token entry, that was set by AM. For complete list of remove* methods see the JavaDoc",
+          "// for org.forgerock.oauth2.core.AccessToken class.",
+          "accessToken.removeTokenName()",
+          "*/"
+        ],
+        "default": true,
+        "language": "GROOVY",
+        "context": "OAUTH2_ACCESS_TOKEN_MODIFICATION",
+        "createdBy": "null",
+        "creationDate": 0,
+        "lastModifiedBy": "null",
+        "lastModifiedDate": 0,
+        "evaluatorVersion": "1.0"
+      },
+      {
+        "_id": "c735de08-f8f2-4e69-aa4a-2d8d3d438323",
+        "name": "OAuth2 May Act Script",
+        "description": "Default global script for OAuth2 May Act",
+        "script": [
+          "/*",
+          " * Copyright 2020 ForgeRock AS. All Rights Reserved",
+          " *",
+          " * Use of this code requires a commercial software license with ForgeRock AS.",
+          " * or with one of its affiliates. All use shall be exclusively subject",
+          " * to such license between the licensee and ForgeRock AS.",
+          " */",
+          "",
+          "/**",
+          " * Defined variables:",
+          " * token - The access token to be updated. Mutable object, all changes to the access token will be reflected.",
+          " * logger - always present, corresponding log files will be prefixed with: scripts.OAUTH2_ACCESS_TOKEN_MODIFICATION.",
+          " * scriptName - always present, the display name of the script",
+          " * session - present if the request contains the session cookie, the user's session object",
+          " * requestProperties - always present, contains a map of request properties:",
+          " *                     requestUri - the request URI",
+          " *                     realm - the realm that the request relates to",
+          " *                     requestParams - a map of the request params and/or posted data. Each value is a list of one or",
+          " *                     more properties. Please note that these should be handled in accordance with OWASP best",
+          " *                     practices.",
+          " * clientProperties - present if the client specified in the request was identified, contains a map of client",
+          " *                    properties:",
+          " *                    clientId - the client's Uri for the request locale",
+          " *                    allowedGrantTypes - list of the allowed grant types (org.forgerock.oauth2.core.GrantType)",
+          " *                                        for the client",
+          " *                    allowedResponseTypes - list of the allowed response types for the client",
+          " *                    allowedScopes - list of the allowed scopes for the client",
+          " *                    customProperties - A map of the custom properties of the client.",
+          " *                                       Lists or maps will be included as sub-maps, e.g:",
+          " *                                       testMap[Key1]=Value1 will be returned as testmap -> Key1 -> Value1",
+          " *",
+          " * identity - always present, the identity of the resource owner",
+          " * scopes - always present, the requested scopes",
+          " */",
+          "/*",
+          "import org.forgerock.json.JsonValue",
+          "",
+          "token.setMayAct(",
+          "    JsonValue.json(JsonValue.object(",
+          "        JsonValue.field(\"client_id\", \"myClient\"), ",
+          "        JsonValue.field(\"sub\", \"(usr!myActor)\"))))",
+          "*/"
+        ],
+        "default": true,
+        "language": "GROOVY",
+        "context": "OAUTH2_MAY_ACT",
+        "createdBy": "null",
+        "creationDate": 0,
+        "lastModifiedBy": "null",
+        "lastModifiedDate": 0,
+        "evaluatorVersion": "1.0"
+      },
+      {
+        "_id": "da56fe60-8b38-4c46-a405-d6b306d4b336",
+        "name": "OAuth2 Evaluate Scope Script",
+        "description": "Default global script for OAuth2 Scope Evaluation",
+        "script": [
+          "/*",
+          " * Copyright 2021 ForgeRock AS. All Rights Reserved",
+          " * Use of this code requires a commercial software license with ForgeRock AS.",
+          " * or with one of its affiliates. All use shall be exclusively subject",
+          " * to such license between the licensee and ForgeRock AS.",
+          " */",
+          "",
+          "/*",
+          " * This script lets you populate the scopes with profile attribute values when the tokeninfo endpoint is called.",
+          " * For example, if one of the scopes is mail, AM sets mail to the resource owner's email address in the token information returned.",
+          " *",
+          " * Defined variables:",
+          " * accessToken - AccessToken (1).",
+          " *               The access token to be updated.",
+          " *               Mutable object, all changes to the access token will be reflected.",
+          " * identity - AMIdentity (2).",
+          " *            The client's identity if present or the resource owner's identity. Can be null.",
+          " * scriptName - String (primitive).",
+          " *              Always present, the display name of the script.",
+          " * logger - Always present, the debug logger instance:",
+          " *          https://backstage.forgerock.com/docs/am/7/scripting-guide/scripting-api-global-logger.html#scripting-api-global-logger.",
+          " *          Corresponding log files will be prefixed with: scripts.OAUTH2_EVALUATE_SCOPE",
+          " * httpClient - HTTP Client (3).",
+          " *              Always present, the HTTP Client instance:",
+          " *              https://backstage.forgerock.com/docs/am/7/scripting-guide/scripting-api-global-http-client.html#scripting-api-global-http-client.",
+          " *",
+          " * Return - a Map<String, Object> of the access token's information (4).",
+          " *",
+          " * Class reference:",
+          " * (1) AccessToken - https://backstage.forgerock.com/docs/am/7/apidocs/org/forgerock/oauth2/core/AccessToken.html.",
+          " * (2) AMIdentity - https://backstage.forgerock.com/docs/am/7/apidocs/com/sun/identity/idm/AMIdentity.html.",
+          " * (3) Client - https://backstage.forgerock.com/docs/am/7/apidocs/org/forgerock/http/Client.html.",
+          " * (4) Map - https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html.",
+          " */",
+          "",
+          "/**",
+          " * Default evaluate scope script to use as a template for new scripts.",
+          " */",
+          "",
+          "(function () {",
+          "    var map = new java.util.HashMap();",
+          "    if (identity !== null) {",
+          "        var scopes = accessToken.getScope().toArray();",
+          "        scopes.forEach(function (scope) {",
+          "            var attributes = identity.getAttribute(scope).toArray();",
+          "            map.put(scope, attributes.join(\",\"));",
+          "        });",
+          "    } else {",
+          "        logger.error('identity is null');",
+          "    }",
+          "    return map;",
+          "}());"
+        ],
+        "default": true,
+        "language": "JAVASCRIPT",
+        "context": "OAUTH2_EVALUATE_SCOPE",
+        "createdBy": "null",
+        "creationDate": 0,
+        "lastModifiedBy": "null",
+        "lastModifiedDate": 0,
+        "evaluatorVersion": "1.0"
       }
     ]
   }
-
 }
-
