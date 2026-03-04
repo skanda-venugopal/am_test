@@ -1266,7 +1266,7 @@
             },
             "clientType": {
               "inherited": false,
-              "value": "Confidential"
+              "value": "INVALID_TYPE"
             },
             "loopbackInterfaceRedirection": {
               "inherited": false,
@@ -1302,43 +1302,7 @@
               "inherited": false,
               "value": 0
             }
-          },
-        "coreOpenIDClientConfig": {
-          "claims": {
-            "inherited": false,
-            "value": []
-          },
-          "backchannel_logout_uri": {
-            "inherited": false
-          },
-          "defaultAcrValues": {
-            "inherited": false,
-            "value": []
-          },
-          "jwtTokenLifetime": {
-            "inherited": false,
-            "value": 0
-          },
-          "defaultMaxAgeEnabled": {
-            "inherited": false,
-            "value": false
-          },
-          "clientSessionUri": {
-            "inherited": false
-          },
-          "defaultMaxAge": {
-            "inherited": false,
-            "value": 600
-          },
-          "postLogoutRedirectUri": {
-            "inherited": false,
-            "value": []
-          },
-          "backchannel_logout_session_required": {
-            "inherited": false,
-            "value": false
           }
-        },
         "coreUmaClientConfig": {
           "claimsRedirectionUris": {
             "inherited": false,
@@ -2104,6 +2068,7 @@
   }
 
 }
+
 
 
 
