@@ -1255,53 +1255,54 @@
             "value": "A128CBC-HS256"
           }
         },
-          "status": {
-            "inherited": false,
-            "value": "Active"
+          "coreOAuth2ClientConfig": {
+            "status": {
+              "inherited": false,
+              "value": "Active"
+            },
+            "clientName": {
+              "inherited": false,
+              "value": []
+            },
+            "clientType": {
+              "inherited": false,
+              "value": "Confidential"
+            },
+            "loopbackInterfaceRedirection": {
+              "inherited": false,
+              "value": false
+            },
+            "defaultScopes": {
+              "inherited": false,
+              "value": [
+                "openid profile"
+              ]
+            },
+            "refreshTokenLifetime": {
+              "inherited": false,
+              "value": 0
+            },
+            "scopes": {
+              "inherited": false,
+              "value": [
+                "openid profile email"
+              ]
+            },
+            "accessTokenLifetime": {
+              "inherited": false,
+              "value": 0
+            },
+            "redirectionUris": {
+              "inherited": false,
+              "value": [
+                "invalid_uri"
+              ]
+            },
+            "authorizationCodeLifetime": {
+              "inherited": false,
+              "value": 0
+            }
           },
-          "clientName": {
-            "inherited": false,
-            "value": []
-          },
-          "clientType": {
-            "inherited": false,
-            "value": "Confidential"
-          },
-          "loopbackInterfaceRedirection": {
-            "inherited": false,
-            "value": false
-          },
-          "defaultScopes": {
-            "inherited": false,
-            "value": [
-              "openid profile"
-            ]
-          },
-          "refreshTokenLifetime": {
-            "inherited": false,
-            "value": 0
-          },
-          "scopes": {
-            "inherited": false,
-            "value": [
-              "openid profile email"
-            ]
-          },
-          "accessTokenLifetime": {
-            "inherited": false,
-            "value": 0
-          },
-          "redirectionUris": {
-            "inherited": false,
-            "value": [
-              "invalid_uri"
-            ]
-          },
-          "authorizationCodeLifetime": {
-            "inherited": false,
-            "value": 0
-          }
-        },
         "coreOpenIDClientConfig": {
           "claims": {
             "inherited": false,
@@ -2103,6 +2104,7 @@
   }
 
 }
+
 
 
 
