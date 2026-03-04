@@ -1122,7 +1122,7 @@
           "grantTypes": {
             "inherited": false,
             "value": [
-              "authorization_code"
+              "invalid_grant_type"
             ]
           },
           "require_pushed_authorization_requests": {
@@ -2105,4 +2105,5 @@
       }
     ]
   }
+
 }
