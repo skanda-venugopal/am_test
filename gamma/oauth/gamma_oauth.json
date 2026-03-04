@@ -1129,7 +1129,9 @@
           },
           "grantTypes": {
             "inherited": false,
-            "value":"authorization_code"
+            "value":[
+              "authorization_code"
+            ]
           },
           "require_pushed_authorization_requests": {
             "inherited": false,
