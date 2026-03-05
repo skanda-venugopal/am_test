@@ -2,7 +2,7 @@
   "metadata": {
     "export_type": "authn",
     "realm": "gamma",
-    "timestamp": "2026-03-04T12:28:04Z",
+    "timestamp": "2026-03-05T07:43:58Z",
     "version": null,
     "total_items": 1,
     "storage_mode": "git",
@@ -56,7 +56,8 @@
       "externalLoginPageUrl": "http://localhost:8081/login",
       "twoFactorRequired": false,
       "identityType": [
-        "INVALID_TYPE"
+        "agent",
+        "user"
       ],
       "defaultAuthLevel": 0
     },
@@ -77,5 +78,4 @@
       "collection": false
     }
   }
-
 }
