@@ -1,0 +1,829 @@
+{
+  "Z2FtbWEtaWRw": {
+    "_id": "Z2FtbWEtaWRw",
+    "entityId": "gamma-idp",
+    "identityProvider": {
+      "assertionContent": {
+        "signingAndEncryption": {
+          "requestResponseSigning": {
+            "authenticationRequest": true,
+            "artifactResolve": true,
+            "logoutRequest": true,
+            "logoutResponse": true,
+            "manageNameIdRequest": true,
+            "manageNameIdResponse": true
+          },
+          "encryption": {
+            "nameIdEncryption": true
+          },
+          "secretIdAndAlgorithms": {}
+        },
+        "nameIdFormat": {
+          "nameIdFormatList": [
+            "urn:oasis:names:tc:SAML:2.0:nameid-format:persistent",
+            "urn:oasis:names:tc:SAML:2.0:nameid-format:transient",
+            "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress",
+            "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
+            "urn:oasis:names:tc:SAML:1.1:nameid-format:WindowsDomainQualifiedName",
+            "urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos",
+            "urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName"
+          ],
+          "nameIdValueMap": [
+            {
+              "key": "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress",
+              "value": "mail",
+              "binary": false
+            }
+          ]
+        },
+        "authenticationContext": {
+          "authenticationContextMapper": "com.sun.identity.saml2.plugins.DefaultIDPAuthnContextMapper",
+          "authContextItems": [
+            {
+              "contextReference": "urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport",
+              "level": 0
+            }
+          ]
+        },
+        "assertionTime": {
+          "notBeforeTimeSkew": 600,
+          "effectiveTime": 600
+        },
+        "basicAuthentication": {
+          "enabled": false
+        },
+        "assertionCache": {
+          "enabled": false
+        }
+      },
+      "assertionProcessing": {
+        "attributeMapper": {
+          "attributeMapper": "com.sun.identity.saml2.plugins.DefaultIDPAttributeMapper",
+          "attributeMapperScript": "[Empty]"
+        },
+        "accountMapper": {
+          "accountMapper": "com.sun.identity.saml2.plugins.DefaultIDPAccountMapper"
+        },
+        "localConfiguration": {}
+      },
+      "services": {
+        "metaAlias": "/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp",
+        "serviceAttributes": {
+          "artifactResolutionService": [
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+              "location": "http://localhost:8081/am/ArtifactResolver/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp"
+            }
+          ],
+          "singleLogoutService": [
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect",
+              "location": "http://localhost:8081/am/IDPSloRedirect/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp",
+              "responseLocation": "http://localhost:8081/am/IDPSloRedirect/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+              "location": "http://localhost:8081/am/IDPSloPOST/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp",
+              "responseLocation": "http://localhost:8081/am/IDPSloPOST/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+              "location": "http://localhost:8081/am/IDPSloSoap/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp"
+            }
+          ],
+          "nameIdService": [
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect",
+              "location": "http://localhost:8081/am/IDPMniRedirect/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp",
+              "responseLocation": "http://localhost:8081/am/IDPMniRedirect/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+              "location": "http://localhost:8081/am/IDPMniPOST/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp",
+              "responseLocation": "http://localhost:8081/am/IDPMniPOST/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+              "location": "http://localhost:8081/am/IDPMniSoap/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp"
+            }
+          ],
+          "singleSignOnService": [
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect",
+              "location": "http://localhost:8081/am/SSORedirect/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp"
+            }
+          ]
+        },
+        "nameIdMapping": [
+          {
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+            "location": "http://localhost:8081/am/NIMSoap/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp"
+          }
+        ],
+        "assertionIdRequest": [
+          {
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+            "location": "http://localhost:8081/am/AIDReqSoap/IDPRole/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp"
+          },
+          {
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:URI",
+            "location": "http://localhost:8081/am/AIDReqUri/IDPRole/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp"
+          }
+        ]
+      },
+      "advanced": {
+        "saeConfiguration": {
+          "idpUrl": "http://localhost:8081/am/idpsaehandler/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp"
+        },
+        "ecpConfiguration": {
+          "idpSessionMapper": "com.sun.identity.saml2.plugins.DefaultIDPECPSessionMapper"
+        },
+        "sessionSynchronization": {},
+        "idpFinderImplementation": {},
+        "relayStateUrlList": {},
+        "idpAdapter": {
+          "idpAdapterScript": "[Empty]"
+        }
+      }
+    },
+    "serviceProvider": {
+      "assertionContent": {
+        "signingAndEncryption": {
+          "requestResponseSigning": {},
+          "encryption": {},
+          "secretIdAndAlgorithms": {}
+        },
+        "nameIdFormat": {
+          "nameIdFormatList": [
+            "urn:oasis:names:tc:SAML:2.0:nameid-format:persistent",
+            "urn:oasis:names:tc:SAML:2.0:nameid-format:transient"
+          ]
+        },
+        "authenticationContext": {
+          "authenticationContextMapper": "com.sun.identity.saml2.plugins.DefaultSPAuthnContextMapper",
+          "authContextItems": [
+            {
+              "contextReference": "urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport",
+              "level": 0,
+              "defaultItem": true
+            }
+          ],
+          "authenticationComparisonType": "Exact",
+          "includeRequestedAuthenticationContext": true
+        },
+        "assertionTimeSkew": 300,
+        "basicAuthentication": {}
+      },
+      "assertionProcessing": {
+        "attributeMapper": {
+          "attributeMapper": "com.sun.identity.saml2.plugins.DefaultSPAttributeMapper",
+          "attributeMap": [
+            {
+              "key": "*",
+              "value": "*"
+            }
+          ]
+        },
+        "autoFederation": {},
+        "accountMapping": {
+          "spAccountMapper": "com.sun.identity.saml2.plugins.DefaultSPAccountMapper"
+        },
+        "responseArtifactMessageEncoding": {
+          "encoding": "URI"
+        },
+        "url": {},
+        "adapter": {
+          "spAdapterScript": "[Empty]"
+        }
+      },
+      "services": {
+        "metaAlias": "/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp",
+        "serviceAttributes": {
+          "singleLogoutService": [
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect",
+              "location": "http://localhost:8081/am/SPSloRedirect/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp",
+              "responseLocation": "http://localhost:8081/am/SPSloRedirect/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+              "location": "http://localhost:8081/am/SPSloPOST/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp",
+              "responseLocation": "http://localhost:8081/am/SPSloPOST/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+              "location": "http://localhost:8081/am/SPSloSoap/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp"
+            }
+          ],
+          "nameIdService": [
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect",
+              "location": "http://localhost:8081/am/SPMniRedirect/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp",
+              "responseLocation": "http://localhost:8081/am/SPMniRedirect/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+              "location": "http://localhost:8081/am/SPMniPOST/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp",
+              "responseLocation": "http://localhost:8081/am/SPMniPOST/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+              "location": "http://localhost:8081/am/SPMniSoap/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp",
+              "responseLocation": "http://localhost:8081/am/SPMniSoap/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp"
+            }
+          ],
+          "assertionConsumerService": [
+            {
+              "isDefault": true,
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact",
+              "location": "http://localhost:8081/am/Consumer/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp",
+              "index": 0
+            },
+            {
+              "isDefault": false,
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+              "location": "http://localhost:8081/am/Consumer/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp",
+              "index": 1
+            },
+            {
+              "isDefault": false,
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:PAOS",
+              "location": "http://localhost:8081/am/Consumer/ECP/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp",
+              "index": 2
+            }
+          ]
+        }
+      },
+      "advanced": {
+        "saeConfiguration": {
+          "spUrl": "http://localhost:8081/am/spsaehandler/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp"
+        },
+        "ecpConfiguration": {
+          "ecpRequestIdpListFinderImpl": "com.sun.identity.saml2.plugins.ECPIDPFinder"
+        },
+        "idpProxy": {},
+        "relayStateUrlList": {}
+      }
+    }
+  },
+  "Z2FtbWEtaWRwMQ": {
+    "_id": "Z2FtbWEtaWRwMQ",
+    "entityId": "gamma-idp1",
+    "identityProvider": {
+      "assertionContent": {
+        "signingAndEncryption": {
+          "requestResponseSigning": {
+            "authenticationRequest": false,
+            "artifactResolve": false,
+            "logoutRequest": false,
+            "logoutResponse": false,
+            "manageNameIdRequest": true,
+            "manageNameIdResponse": false
+          },
+          "encryption": {
+            "nameIdEncryption": true
+          },
+          "secretIdAndAlgorithms": {}
+        },
+        "nameIdFormat": {
+          "nameIdFormatList": [
+            "urn:oasis:names:tc:SAML:2.0:nameid-format:persistent",
+            "urn:oasis:names:tc:SAML:2.0:nameid-format:transient",
+            "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress",
+            "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
+            "urn:oasis:names:tc:SAML:1.1:nameid-format:WindowsDomainQualifiedName",
+            "urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos",
+            "urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName"
+          ],
+          "nameIdValueMap": [
+            {
+              "key": "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress",
+              "value": "mail",
+              "binary": false
+            }
+          ]
+        },
+        "authenticationContext": {
+          "authenticationContextMapper": "com.sun.identity.saml2.plugins.DefaultIDPAuthnContextMapper",
+          "authContextItems": [
+            {
+              "contextReference": "urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport",
+              "level": 0
+            }
+          ]
+        },
+        "assertionTime": {
+          "notBeforeTimeSkew": 600,
+          "effectiveTime": 600
+        },
+        "basicAuthentication": {
+          "enabled": false
+        },
+        "assertionCache": {
+          "enabled": false
+        }
+      },
+      "assertionProcessing": {
+        "attributeMapper": {
+          "attributeMapper": "com.sun.identity.saml2.plugins.DefaultIDPAttributeMapper",
+          "attributeMapperScript": "[Empty]"
+        },
+        "accountMapper": {
+          "accountMapper": "com.sun.identity.saml2.plugins.DefaultIDPAccountMapper"
+        },
+        "localConfiguration": {}
+      },
+      "services": {
+        "metaAlias": "/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp1",
+        "serviceAttributes": {
+          "artifactResolutionService": [
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+              "location": "http://localhost:8081/am/ArtifactResolver/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp1"
+            }
+          ],
+          "singleLogoutService": [
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect",
+              "location": "http://localhost:8081/am/IDPSloRedirect/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp1",
+              "responseLocation": "http://localhost:8081/am/IDPSloRedirect/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp1"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+              "location": "http://localhost:8081/am/IDPSloPOST/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp1",
+              "responseLocation": "http://localhost:8081/am/IDPSloPOST/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp1"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+              "location": "http://localhost:8081/am/IDPSloSoap/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp1"
+            }
+          ],
+          "nameIdService": [
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect",
+              "location": "http://localhost:8081/am/IDPMniRedirect/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp1",
+              "responseLocation": "http://localhost:8081/am/IDPMniRedirect/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp1"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+              "location": "http://localhost:8081/am/IDPMniPOST/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp1",
+              "responseLocation": "http://localhost:8081/am/IDPMniPOST/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp1"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+              "location": "http://localhost:8081/am/IDPMniSoap/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp1"
+            }
+          ],
+          "singleSignOnService": [
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect",
+              "location": "http://localhost:8081/am/SSORedirect/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp1"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+              "location": "http://localhost:8081/am/SSOPOST/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp1"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+              "location": "http://localhost:8081/am/SSOSoap/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp1"
+            }
+          ]
+        },
+        "nameIdMapping": [
+          {
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+            "location": "http://localhost:8081/am/NIMSoap/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp1"
+          }
+        ],
+        "assertionIdRequest": [
+          {
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+            "location": "http://localhost:8081/am/AIDReqSoap/IDPRole/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp1"
+          },
+          {
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:URI",
+            "location": "http://localhost:8081/am/AIDReqUri/IDPRole/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp1"
+          }
+        ]
+      },
+      "advanced": {
+        "saeConfiguration": {
+          "idpUrl": "http://localhost:8081/am/idpsaehandler/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-idp1"
+        },
+        "ecpConfiguration": {
+          "idpSessionMapper": "com.sun.identity.saml2.plugins.DefaultIDPECPSessionMapper"
+        },
+        "sessionSynchronization": {},
+        "idpFinderImplementation": {},
+        "relayStateUrlList": {},
+        "idpAdapter": {
+          "idpAdapterScript": "[Empty]"
+        }
+      }
+    },
+    "serviceProvider": {
+      "assertionContent": {
+        "signingAndEncryption": {
+          "requestResponseSigning": {},
+          "encryption": {},
+          "secretIdAndAlgorithms": {}
+        },
+        "nameIdFormat": {
+          "nameIdFormatList": [
+            "urn:oasis:names:tc:SAML:2.0:nameid-format:persistent",
+            "urn:oasis:names:tc:SAML:2.0:nameid-format:transient",
+            "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress",
+            "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
+            "urn:oasis:names:tc:SAML:1.1:nameid-format:WindowsDomainQualifiedName",
+            "urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos",
+            "urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName"
+          ]
+        },
+        "authenticationContext": {
+          "authenticationContextMapper": "com.sun.identity.saml2.plugins.DefaultSPAuthnContextMapper",
+          "authContextItems": [
+            {
+              "contextReference": "urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport",
+              "level": 0,
+              "defaultItem": true
+            }
+          ],
+          "authenticationComparisonType": "Exact",
+          "includeRequestedAuthenticationContext": true
+        },
+        "assertionTimeSkew": 300,
+        "basicAuthentication": {}
+      },
+      "assertionProcessing": {
+        "attributeMapper": {
+          "attributeMapper": "com.sun.identity.saml2.plugins.DefaultSPAttributeMapper",
+          "attributeMap": [
+            {
+              "key": "*",
+              "value": "*"
+            }
+          ]
+        },
+        "autoFederation": {},
+        "accountMapping": {
+          "spAccountMapper": "com.sun.identity.saml2.plugins.DefaultSPAccountMapper"
+        },
+        "responseArtifactMessageEncoding": {
+          "encoding": "URI"
+        },
+        "url": {},
+        "adapter": {
+          "spAdapterScript": "[Empty]"
+        }
+      },
+      "services": {
+        "metaAlias": "/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp1",
+        "serviceAttributes": {
+          "singleLogoutService": [
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect",
+              "location": "http://localhost:8081/am/SPSloRedirect/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp1",
+              "responseLocation": "http://localhost:8081/am/SPSloRedirect/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp1"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+              "location": "http://localhost:8081/am/SPSloPOST/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp1",
+              "responseLocation": "http://localhost:8081/am/SPSloPOST/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp1"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+              "location": "http://localhost:8081/am/SPSloSoap/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp1"
+            }
+          ],
+          "nameIdService": [
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect",
+              "location": "http://localhost:8081/am/SPMniRedirect/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp1",
+              "responseLocation": "http://localhost:8081/am/SPMniRedirect/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp1"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+              "location": "http://localhost:8081/am/SPMniPOST/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp1",
+              "responseLocation": "http://localhost:8081/am/SPMniPOST/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp1"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+              "location": "http://localhost:8081/am/SPMniSoap/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp1",
+              "responseLocation": "http://localhost:8081/am/SPMniSoap/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp1"
+            }
+          ],
+          "assertionConsumerService": [
+            {
+              "isDefault": true,
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact",
+              "location": "http://localhost:8081/am/Consumer/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp1",
+              "index": 0
+            },
+            {
+              "isDefault": false,
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+              "location": "http://localhost:8081/am/Consumer/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp1",
+              "index": 1
+            },
+            {
+              "isDefault": false,
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:PAOS",
+              "location": "http://localhost:8081/am/Consumer/ECP/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp1",
+              "index": 2
+            }
+          ]
+        }
+      },
+      "advanced": {
+        "saeConfiguration": {
+          "spUrl": "http://localhost:8081/am/spsaehandler/metaAlias/gamma/http://localhost:8081/am/saml2/jsp/metaAlias/gamma-sp1"
+        },
+        "ecpConfiguration": {
+          "ecpRequestIdpListFinderImpl": "com.sun.identity.saml2.plugins.ECPIDPFinder"
+        },
+        "idpProxy": {},
+        "relayStateUrlList": {}
+      }
+    }
+  },
+  "aHR0cHM6Ly9hbS5sb2NhbGhvc3Q6ODA4MS9hbS9pZHAvYmV0YQ": {
+    "_id": "aHR0cHM6Ly9hbS5sb2NhbGhvc3Q6ODA4MS9hbS9pZHAvYmV0YQ",
+    "entityId": "https://am.localhost:8081/am/idp/beta",
+    "identityProvider": {
+      "assertionContent": {
+        "signingAndEncryption": {
+          "requestResponseSigning": {
+            "authenticationRequest": false,
+            "artifactResolve": false,
+            "logoutRequest": false,
+            "logoutResponse": false,
+            "manageNameIdRequest": false,
+            "manageNameIdResponse": false
+          },
+          "encryption": {
+            "nameIdEncryption": false
+          },
+          "secretIdAndAlgorithms": {}
+        },
+        "nameIdFormat": {
+          "nameIdFormatList": [
+            "urn:oasis:names:tc:SAML:2.0:nameid-format:persistent",
+            "urn:oasis:names:tc:SAML:2.0:nameid-format:transient",
+            "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress",
+            "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
+            "urn:oasis:names:tc:SAML:1.1:nameid-format:WindowsDomainQualifiedName",
+            "urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos",
+            "urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName"
+          ],
+          "nameIdValueMap": [
+            {
+              "key": "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress",
+              "value": "mail",
+              "binary": false
+            }
+          ]
+        },
+        "authenticationContext": {
+          "authenticationContextMapper": "com.sun.identity.saml2.plugins.DefaultIDPAuthnContextMapper",
+          "authContextItems": [
+            {
+              "contextReference": "urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport",
+              "level": 0
+            }
+          ]
+        },
+        "assertionTime": {
+          "notBeforeTimeSkew": 600,
+          "effectiveTime": 600
+        },
+        "basicAuthentication": {
+          "enabled": false
+        },
+        "assertionCache": {
+          "enabled": false
+        }
+      },
+      "assertionProcessing": {
+        "attributeMapper": {
+          "attributeMapper": "com.sun.identity.saml2.plugins.DefaultIDPAttributeMapper",
+          "attributeMapperScript": "[Empty]"
+        },
+        "accountMapper": {
+          "accountMapper": "com.sun.identity.saml2.plugins.DefaultIDPAccountMapper"
+        },
+        "localConfiguration": {}
+      },
+      "services": {
+        "metaAlias": "/gamma//beta/idp",
+        "serviceAttributes": {
+          "artifactResolutionService": [
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+              "location": "http://localhost:8081/am/ArtifactResolver/metaAlias/gamma//beta/idp"
+            }
+          ],
+          "singleLogoutService": [
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect",
+              "location": "http://localhost:8081/am/IDPSloRedirect/metaAlias/gamma//beta/idp",
+              "responseLocation": "http://localhost:8081/am/IDPSloRedirect/metaAlias/gamma//beta/idp"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+              "location": "http://localhost:8081/am/IDPSloPOST/metaAlias/gamma//beta/idp",
+              "responseLocation": "http://localhost:8081/am/IDPSloPOST/metaAlias/gamma//beta/idp"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+              "location": "http://localhost:8081/am/IDPSloSoap/metaAlias/gamma//beta/idp"
+            }
+          ],
+          "nameIdService": [
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect",
+              "location": "http://localhost:8081/am/IDPMniRedirect/metaAlias/gamma//beta/idp",
+              "responseLocation": "http://localhost:8081/am/IDPMniRedirect/metaAlias/gamma//beta/idp"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+              "location": "http://localhost:8081/am/IDPMniPOST/metaAlias/gamma//beta/idp",
+              "responseLocation": "http://localhost:8081/am/IDPMniPOST/metaAlias/gamma//beta/idp"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+              "location": "http://localhost:8081/am/IDPMniSoap/metaAlias/gamma//beta/idp"
+            }
+          ],
+          "singleSignOnService": [
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect",
+              "location": "http://localhost:8081/am/SSORedirect/metaAlias/gamma//beta/idp"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+              "location": "http://localhost:8081/am/SSOPOST/metaAlias/gamma//beta/idp"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+              "location": "http://localhost:8081/am/SSOSoap/metaAlias/gamma//beta/idp"
+            }
+          ]
+        },
+        "nameIdMapping": [
+          {
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+            "location": "http://localhost:8081/am/NIMSoap/metaAlias/gamma//beta/idp"
+          }
+        ],
+        "assertionIdRequest": [
+          {
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+            "location": "http://localhost:8081/am/AIDReqSoap/IDPRole/metaAlias/gamma//beta/idp"
+          },
+          {
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:URI",
+            "location": "http://localhost:8081/am/AIDReqUri/IDPRole/metaAlias/gamma//beta/idp"
+          }
+        ]
+      },
+      "advanced": {
+        "saeConfiguration": {
+          "idpUrl": "http://localhost:8081/am/idpsaehandler/metaAlias/gamma//beta/idp"
+        },
+        "ecpConfiguration": {
+          "idpSessionMapper": "com.sun.identity.saml2.plugins.DefaultIDPECPSessionMapper"
+        },
+        "sessionSynchronization": {},
+        "idpFinderImplementation": {},
+        "relayStateUrlList": {},
+        "idpAdapter": {
+          "idpAdapterScript": "[Empty]"
+        }
+      }
+    },
+    "serviceProvider": {
+      "assertionContent": {
+        "signingAndEncryption": {
+          "requestResponseSigning": {},
+          "encryption": {},
+          "secretIdAndAlgorithms": {}
+        },
+        "nameIdFormat": {
+          "nameIdFormatList": [
+            "urn:oasis:names:tc:SAML:2.0:nameid-format:persistent",
+            "urn:oasis:names:tc:SAML:2.0:nameid-format:transient",
+            "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress",
+            "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
+            "urn:oasis:names:tc:SAML:1.1:nameid-format:WindowsDomainQualifiedName",
+            "urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos",
+            "urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName"
+          ]
+        },
+        "authenticationContext": {
+          "authenticationContextMapper": "com.sun.identity.saml2.plugins.DefaultSPAuthnContextMapper",
+          "authContextItems": [
+            {
+              "contextReference": "urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport",
+              "level": 0,
+              "defaultItem": true
+            }
+          ],
+          "authenticationComparisonType": "Exact",
+          "includeRequestedAuthenticationContext": true
+        },
+        "assertionTimeSkew": 300,
+        "basicAuthentication": {}
+      },
+      "assertionProcessing": {
+        "attributeMapper": {
+          "attributeMapper": "com.sun.identity.saml2.plugins.DefaultSPAttributeMapper",
+          "attributeMap": [
+            {
+              "key": "*",
+              "value": "*"
+            }
+          ]
+        },
+        "autoFederation": {},
+        "accountMapping": {
+          "spAccountMapper": "com.sun.identity.saml2.plugins.DefaultSPAccountMapper"
+        },
+        "responseArtifactMessageEncoding": {
+          "encoding": "URI"
+        },
+        "url": {},
+        "adapter": {
+          "spAdapterScript": "[Empty]"
+        }
+      },
+      "services": {
+        "metaAlias": "/gamma//beta/sp",
+        "serviceAttributes": {
+          "singleLogoutService": [
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect",
+              "location": "http://localhost:8081/am/SPSloRedirect/metaAlias/gamma//beta/sp",
+              "responseLocation": "http://localhost:8081/am/SPSloRedirect/metaAlias/gamma//beta/sp"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+              "location": "http://localhost:8081/am/SPSloPOST/metaAlias/gamma//beta/sp",
+              "responseLocation": "http://localhost:8081/am/SPSloPOST/metaAlias/gamma//beta/sp"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+              "location": "http://localhost:8081/am/SPSloSoap/metaAlias/gamma//beta/sp"
+            }
+          ],
+          "nameIdService": [
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect",
+              "location": "http://localhost:8081/am/SPMniRedirect/metaAlias/gamma//beta/sp",
+              "responseLocation": "http://localhost:8081/am/SPMniRedirect/metaAlias/gamma//beta/sp"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+              "location": "http://localhost:8081/am/SPMniPOST/metaAlias/gamma//beta/sp",
+              "responseLocation": "http://localhost:8081/am/SPMniPOST/metaAlias/gamma//beta/sp"
+            },
+            {
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+              "location": "http://localhost:8081/am/SPMniSoap/metaAlias/gamma//beta/sp",
+              "responseLocation": "http://localhost:8081/am/SPMniSoap/metaAlias/gamma//beta/sp"
+            }
+          ],
+          "assertionConsumerService": [
+            {
+              "isDefault": true,
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact",
+              "location": "http://localhost:8081/am/Consumer/metaAlias/gamma//beta/sp",
+              "index": 0
+            },
+            {
+              "isDefault": false,
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+              "location": "http://localhost:8081/am/Consumer/metaAlias/gamma//beta/sp",
+              "index": 1
+            },
+            {
+              "isDefault": false,
+              "binding": "urn:oasis:names:tc:SAML:2.0:bindings:PAOS",
+              "location": "http://localhost:8081/am/Consumer/ECP/metaAlias/gamma//beta/sp",
+              "index": 2
+            }
+          ]
+        }
+      },
+      "advanced": {
+        "saeConfiguration": {
+          "spUrl": "http://localhost:8081/am/spsaehandler/metaAlias/gamma//beta/sp"
+        },
+        "ecpConfiguration": {
+          "ecpRequestIdpListFinderImpl": "com.sun.identity.saml2.plugins.ECPIDPFinder"
+        },
+        "idpProxy": {},
+        "relayStateUrlList": {}
+      }
+    }
+  }
+}
