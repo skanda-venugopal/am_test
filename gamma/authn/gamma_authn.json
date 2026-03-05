@@ -56,8 +56,7 @@
       "externalLoginPageUrl": "http://localhost:8081/login",
       "twoFactorRequired": false,
       "identityType": [
-        "agent",
-        "user"
+        "INVALID_TYPE"
       ],
       "defaultAuthLevel": 0
     },
@@ -78,4 +77,5 @@
       "collection": false
     }
   }
+
 }
