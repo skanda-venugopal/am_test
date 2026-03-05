@@ -2,7 +2,7 @@
   "metadata": {
     "export_type": "saml",
     "realm": "gamma",
-    "timestamp": "2026-03-05T07:59:21Z",
+    "timestamp": "2026-03-05T09:56:27Z",
     "version": null,
     "total_items": 1,
     "storage_mode": "git",
@@ -571,7 +571,7 @@
         }
       },
       {
-        "_id": "invalid-id",
+        "_id": "aHR0cHM6Ly9hbS5sb2NhbGhvc3Q6ODA4MS9hbS9pZHAvYmV0YQ",
         "entityId": "https://am.localhost:8081/am/idp/beta",
         "identityProvider": {
           "assertionContent": {
@@ -868,5 +868,4 @@
     ],
     "scripts": []
   }
-
 }
