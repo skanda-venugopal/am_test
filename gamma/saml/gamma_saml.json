@@ -616,7 +616,7 @@
             "serviceAttributes": {
               "artifactResolutionService": [
                 {
-                  "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+                  "binding": "INVALID_BINDING_TYPE",
                   "location": "http://localhost:8081/am/ArtifactResolver/metaAlias/gamma//beta/idp"
                 }
               ],
@@ -844,3 +844,4 @@
   }
 
 }
+
