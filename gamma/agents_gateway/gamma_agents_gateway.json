@@ -1,0 +1,37 @@
+{
+  "data": {
+    "java-agent-app1": {
+      "_id": "java-agent-app1",
+      "igTokenIntrospection": "None",
+      "status": "Inactive",
+      "userpassword": null,
+      "_type": {
+        "_id": "IdentityGatewayAgent",
+        "name": "Identity Gateway Agents",
+        "collection": true
+      }
+    },
+    "java-agent-orders": {
+      "_id": "java-agent-orders",
+      "igTokenIntrospection": "None",
+      "status": "Inactive",
+      "userpassword": null,
+      "_type": {
+        "_id": "IdentityGatewayAgent",
+        "name": "Identity Gateway Agents",
+        "collection": true
+      }
+    },
+    "web-agent-orders1": {
+      "_id": "web-agent-orders1",
+      "igTokenIntrospection": "None",
+      "status": "Active",
+      "userpassword": null,
+      "_type": {
+        "_id": "IdentityGatewayAgent",
+        "name": "Identity Gateway Agents",
+        "collection": true
+      }
+    }
+  }
+}
