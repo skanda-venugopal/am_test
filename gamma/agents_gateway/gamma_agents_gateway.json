@@ -50,7 +50,7 @@
         "agentgroup": null,
         "userpassword": null,
         "_type": {
-          "_id": "IdentityGatewayAgent",
+          "_id": 123,
           "name": "Identity Gateway Agents",
           "collection": true
         }
@@ -62,4 +62,5 @@
     "totalPagedResults": 3,
     "remainingPagedResults": -1
   }
+
 }
