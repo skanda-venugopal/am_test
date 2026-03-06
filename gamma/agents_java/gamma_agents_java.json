@@ -2,7 +2,7 @@
   "metadata": {
     "export_type": "agents_java",
     "realm": "gamma",
-    "timestamp": "2026-03-06T11:41:37Z",
+    "timestamp": "2026-03-06T11:44:53Z",
     "version": null,
     "total_items": 3,
     "storage_mode": "git",
@@ -377,7 +377,7 @@
           ],
           "agentConfigChangeNotificationsEnabled": true,
           "debugLogfilePrefix": null,
-          "preAuthCookieName": 123
+          "preAuthCookieName": "amFilterCDSSORequest"
         },
         "advancedJ2EEAgentConfig": {
           "postDataStickySessionKeyValue": null,
@@ -637,19 +637,19 @@
           "expiredSessionCacheTTL": 20,
           "fragmentRelayUri": null,
           "postDataStickySessionMode": "URL",
-          "alternativeHostname": null,
+          "alternativeAgentHostname": null,
           "expiredSessionCacheSize": 500,
           "clientHostnameHeader": null,
           "monitoringToCSV": false,
           "postDataPreserveMultipartParameterLimitBytes": 104857600
         },
-        "miscJ2EEConfig": {
-          "legacyUserList": [
+        "miscJ2EEAgentConfig": {
+          "legacyUserAgentList": [
             "Mozilla/4.7*"
           ],
           "loginReasonMap": {},
           "authFailReasonParameterRemapper": {},
-          "302RedirectStatusCode": 200,
+          "agent302RedirectStatusCode": 200,
           "loginReasonParameterName": null,
           "gotoUrl": null,
           "localeLanguage": "en",
@@ -698,5 +698,4 @@
     "totalPagedResults": 3,
     "remainingPagedResults": -1
   }
-
 }
