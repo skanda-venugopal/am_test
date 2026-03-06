@@ -563,7 +563,7 @@
         "globalJ2EEAgentConfig": {
           "userTokenName": "UserToken",
           "secretLabelIdentifier": null,
-          "fqdnDefault": "orders.internal.company.com",
+          "fqdnDefault": 123,
           "recheckAmUnavailabilityInSeconds": 5,
           "httpSessionBinding": true,
           "userpassword": null,
@@ -698,4 +698,5 @@
     "totalPagedResults": 3,
     "remainingPagedResults": -1
   }
+
 }
