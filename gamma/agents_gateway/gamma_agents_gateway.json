@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "export_type": "agents_gateway",
+    "realm": "gamma",
+    "timestamp": "2026-03-06T11:47:30Z",
+    "version": null,
+    "total_items": 3,
+    "storage_mode": "git",
+    "component": "agents_gateway"
+  },
+  "data": {
+    "result": [
+      {
+        "_id": "java-agent-app1",
+        "secretLabelIdentifier": null,
+        "igTokenIntrospection": "None",
+        "igCdssoLoginUrlTemplate": null,
+        "status": "Inactive",
+        "igCdssoRedirectUrls": [],
+        "agentgroup": null,
+        "userpassword": null,
+        "_type": {
+          "_id": "IdentityGatewayAgent",
+          "name": "Identity Gateway Agents",
+          "collection": true
+        }
+      },
+      {
+        "_id": "java-agent-orders",
+        "secretLabelIdentifier": null,
+        "igTokenIntrospection": "None",
+        "igCdssoLoginUrlTemplate": null,
+        "status": "Inactive",
+        "igCdssoRedirectUrls": [],
+        "agentgroup": null,
+        "userpassword": null,
+        "_type": {
+          "_id": "IdentityGatewayAgent",
+          "name": "Identity Gateway Agents",
+          "collection": true
+        }
+      },
+      {
+        "_id": "web-agent-orders1",
+        "secretLabelIdentifier": null,
+        "igTokenIntrospection": "None",
+        "igCdssoLoginUrlTemplate": null,
+        "status": "Active",
+        "igCdssoRedirectUrls": [],
+        "agentgroup": null,
+        "userpassword": null,
+        "_type": {
+          "_id": "IdentityGatewayAgent",
+          "name": "Identity Gateway Agents",
+          "collection": true
+        }
+      }
+    ],
+    "resultCount": 3,
+    "pagedResultsCookie": null,
+    "totalPagedResultsPolicy": "EXACT",
+    "totalPagedResults": 3,
+    "remainingPagedResults": -1
+  }
+}
