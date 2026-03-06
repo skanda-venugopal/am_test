@@ -42,7 +42,7 @@
       },
       {
         "_id": "web-agent-orders1",
-        "secretLabelIdentifier": null,
+        "secretLabelIdentifier": 123,
         "igTokenIntrospection": "None",
         "igCdssoLoginUrlTemplate": null,
         "status": "Active",
@@ -64,3 +64,4 @@
   }
 
 }
+
