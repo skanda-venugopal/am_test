@@ -45,7 +45,7 @@
         "secretLabelIdentifier": 123,
         "igTokenIntrospection": "None",
         "igCdssoLoginUrlTemplate": null,
-        "status": "Active",
+        "status": 1233,
         "igCdssoRedirectUrls": [],
         "agentgroup": null,
         "userpassword": null,
@@ -64,4 +64,5 @@
   }
 
 }
+
 
