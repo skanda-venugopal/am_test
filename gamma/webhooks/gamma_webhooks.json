@@ -44,7 +44,7 @@
         "body": "xxx",
         "_id": "test3",
         "_type": {
-          "_id": "webhooks",
+          "_id": "INVALID",
           "name": "INVALID",
           "collection": true
         }
@@ -58,4 +58,5 @@
   }
 
 }
+
 
