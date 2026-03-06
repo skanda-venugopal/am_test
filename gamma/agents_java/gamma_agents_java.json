@@ -377,7 +377,7 @@
           ],
           "agentConfigChangeNotificationsEnabled": true,
           "debugLogfilePrefix": null,
-          "preAuthCookieName": "amFilterCDSSORequest"
+          "preAuthCookieName": 123
         },
         "advancedJ2EEAgentConfig": {
           "postDataStickySessionKeyValue": null,
@@ -637,19 +637,19 @@
           "expiredSessionCacheTTL": 20,
           "fragmentRelayUri": null,
           "postDataStickySessionMode": "URL",
-          "alternativeAgentHostname": null,
+          "alternativeHostname": null,
           "expiredSessionCacheSize": 500,
           "clientHostnameHeader": null,
           "monitoringToCSV": false,
           "postDataPreserveMultipartParameterLimitBytes": 104857600
         },
-        "miscJ2EEAgentConfig": {
-          "legacyUserAgentList": [
+        "miscJ2EEConfig": {
+          "legacyUserList": [
             "Mozilla/4.7*"
           ],
           "loginReasonMap": {},
           "authFailReasonParameterRemapper": {},
-          "agent302RedirectStatusCode": 200,
+          "302RedirectStatusCode": 200,
           "loginReasonParameterName": null,
           "gotoUrl": null,
           "localeLanguage": "en",
@@ -698,4 +698,5 @@
     "totalPagedResults": 3,
     "remainingPagedResults": -1
   }
+
 }
