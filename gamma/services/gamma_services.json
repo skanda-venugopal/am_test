@@ -1,0 +1,62 @@
+{
+  "data": {
+    "audit": {
+      "_id": "",
+      "_rev": "-1110133314",
+      "auditEnabled": true,
+      "whitelistFieldFilters": [
+        "xyz"
+      ],
+      "blacklistFieldFilters": [
+        "lmno"
+      ],
+      "_type": {
+        "_id": "audit",
+        "name": "Audit Logging",
+        "collection": false
+      }
+    },
+    "dashboard": {
+      "_id": "",
+      "_rev": "5231777",
+      "assignedDashboard": [
+        "abcd"
+      ],
+      "_type": {
+        "_id": "dashboard",
+        "name": "Dashboard",
+        "collection": false
+      }
+    },
+    "policyconfiguration": {
+      "_id": "",
+      "_rev": "-52720779",
+      "userAliasEnabled": false,
+      "connectionPoolMinimumSize": 1,
+      "maximumSearchResults": 100,
+      "policyHeartbeatTimeUnit": "SECONDS",
+      "usersSearchAttribute": "uid",
+      "searchTimeout": 5,
+      "policyHeartbeatInterval": 10,
+      "usersSearchScope": "SCOPE_SUB",
+      "subjectsResultTTL": 10,
+      "checkIfResourceTypeExists": true,
+      "connectionPoolMaximumSize": 10,
+      "sslEnabled": true,
+      "bindDn": "cn=Directory Manager",
+      "ldapServer": [
+        "localhost:50636"
+      ],
+      "mtlsEnabled": false,
+      "bindPassword": null,
+      "realmSearchFilter": "(objectclass=sunismanagedorganization)",
+      "usersSearchFilter": "(objectclass=inetorgperson)",
+      "usersBaseDn": "dc=openam,dc=forgerock,dc=org",
+      "_type": {
+        "_id": "policyconfiguration",
+        "name": "Policy Configuration",
+        "collection": false
+      }
+    }
+  }
+}
