@@ -1,0 +1,49 @@
+{
+  "data": {
+    "java-agent-app1": {
+      "_id": "java-agent-app1",
+      "secretLabelIdentifier": null,
+      "igTokenIntrospection": "None",
+      "igCdssoLoginUrlTemplate": null,
+      "status": "Inactive",
+      "igCdssoRedirectUrls": [],
+      "agentgroup": null,
+      "userpassword": null,
+      "_type": {
+        "_id": "IdentityGatewayAgent",
+        "name": "Identity Gateway Agents",
+        "collection": true
+      }
+    },
+    "java-agent-orders": {
+      "_id": "java-agent-orders",
+      "secretLabelIdentifier": null,
+      "igTokenIntrospection": "None",
+      "igCdssoLoginUrlTemplate": null,
+      "status": "Inactive",
+      "igCdssoRedirectUrls": [],
+      "agentgroup": null,
+      "userpassword": null,
+      "_type": {
+        "_id": "IdentityGatewayAgent",
+        "name": "Identity Gateway Agents",
+        "collection": true
+      }
+    },
+    "web-agent-orders1": {
+      "_id": "web-agent-orders1",
+      "secretLabelIdentifier": null,
+      "igTokenIntrospection": "None",
+      "igCdssoLoginUrlTemplate": null,
+      "status": "Active",
+      "igCdssoRedirectUrls": [],
+      "agentgroup": null,
+      "userpassword": null,
+      "_type": {
+        "_id": "IdentityGatewayAgent",
+        "name": "Identity Gateway Agents",
+        "collection": true
+      }
+    }
+  }
+}
