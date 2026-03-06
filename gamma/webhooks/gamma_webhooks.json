@@ -42,10 +42,10 @@
           "accept": "*/*"
         },
         "body": "xxx",
-        "_id": "test3_BREAK",
+        "_id": "test3",
         "_type": {
           "_id": "webhooks",
-          "name": "Webhook Service",
+          "name": "INVALID",
           "collection": true
         }
       }
@@ -58,3 +58,4 @@
   }
 
 }
+
