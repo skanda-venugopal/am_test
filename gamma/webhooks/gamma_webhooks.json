@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "export_type": "webhooks",
+    "realm": "gamma",
+    "timestamp": "2026-03-06T07:54:15Z",
+    "version": null,
+    "total_items": 3,
+    "storage_mode": "git",
+    "component": "webhooks"
+  },
+  "data": {
+    "result": [
+      {
+        "url": "xyz.com",
+        "headers": {
+          "accept": "*/*"
+        },
+        "body": "xyz",
+        "_id": "test1",
+        "_type": {
+          "_id": "webhooks",
+          "name": "Webhook Service",
+          "collection": true
+        }
+      },
+      {
+        "url": "abcd.com",
+        "headers": {
+          "accept": "*/*"
+        },
+        "body": "abcd",
+        "_id": "test2",
+        "_type": {
+          "_id": "webhooks",
+          "name": "Webhook Service",
+          "collection": true
+        }
+      },
+      {
+        "url": "xxx.com",
+        "headers": {
+          "accept": "*/*"
+        },
+        "body": "xxx",
+        "_id": "test3",
+        "_type": {
+          "_id": "webhooks",
+          "name": "Webhook Service",
+          "collection": true
+        }
+      }
+    ],
+    "resultCount": 3,
+    "pagedResultsCookie": null,
+    "totalPagedResultsPolicy": "NONE",
+    "totalPagedResults": -1,
+    "remainingPagedResults": -1
+  }
+}
