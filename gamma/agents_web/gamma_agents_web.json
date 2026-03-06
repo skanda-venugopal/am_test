@@ -481,7 +481,7 @@
           "auditAccessType": "LOG_NONE",
           "agentgroup": null,
           "notificationsEnabled": true,
-          "agentUriPrefix": "http://localhost:8080/amagent",
+          "agentUriPrefix": "localhost/amagent",
           "disableJwtAudit": false,
           "jwtName": "am-auth-jwt",
           "repositoryLocation": "centralized",
@@ -504,4 +504,5 @@
     "totalPagedResults": 3,
     "remainingPagedResults": -1
   }
+
 }
