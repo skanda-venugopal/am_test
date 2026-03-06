@@ -19,7 +19,7 @@
       "moduleBasedAuthEnabled": true,
       "sharedSecret": null,
       "addClearSiteDataHeader": true,
-      "keyAlias": "dev-cookie-cert-test-1"
+      "keyAlias": 123
     },
     "postauthprocess": {
       "usernameGeneratorClass": "com.sun.identity.authentication.spi.DefaultUserIDGenerator",
@@ -79,3 +79,4 @@
     }
   }
 }
+
