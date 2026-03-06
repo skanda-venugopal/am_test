@@ -612,7 +612,7 @@
             "localConfiguration": {}
           },
           "services": {
-            "metaAlias": "/gamma//beta/idp",
+            "metaAlias": "/gamma/idp",
             "serviceAttributes": {
               "artifactResolutionService": [
                 {
@@ -842,4 +842,5 @@
     ],
     "scripts": []
   }
+
 }
